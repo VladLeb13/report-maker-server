@@ -6,6 +6,7 @@ import (
 	"net/http"
 
 	"report-maker-server/server/controller"
+	"report-maker-server/server/receiver"
 
 	"github.com/gorilla/mux"
 )
@@ -22,6 +23,7 @@ func Serve() (err error) {
 	router.HandleFunc("/login", controller.Login)
 
 	router.HandleFunc("/logining", controller.Logining).Methods("POST")
+	router.HandleFunc("/upload", receiver.Upload).Methods("POST")
 
 	router.Use(controller.BaseAuth)
 

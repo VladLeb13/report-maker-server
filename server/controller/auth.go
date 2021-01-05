@@ -20,13 +20,10 @@ func BaseAuth(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 		cookie, _ := r.Cookie("auth-session")
-		log.Println(r.Method)
-		log.Println(r.URL)
 
 		if cookie == nil {
-			log.Println("NO auth")
-
-			if r.RequestURI == "/login" || r.RequestURI == "/logining" {
+			//log.Println("NO auth")
+			if r.RequestURI == "/login" || r.RequestURI == "/logining" || r.RequestURI == "/upload" {
 				h.ServeHTTP(w, r)
 			} else {
 				http.Redirect(w, r, "/login", http.StatusPermanentRedirect)

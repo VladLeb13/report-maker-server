@@ -31,7 +31,7 @@ func Logining(w http.ResponseWriter, r *http.Request) {
 
 	var authResult bool
 	var err error
-	if authResult, err = findInBase(rlogin, rpass); err != nil {
+	if authResult, err = FindInBase(rlogin, rpass); err != nil {
 		log.Println(err)
 		http.Redirect(w, r, "/login", 301)
 	}
@@ -78,9 +78,13 @@ func Logining(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func findInBase(rlogin string, rpass string) (authResult bool, err error) {
+func FindInBase(rlogin string, rpass string) (authResult bool, err error) {
 
 	if rlogin == "vl" && rpass == "vl" {
+		authResult = true
+	}
+
+	if rlogin == "client" && rpass == "clientpass" {
 		authResult = true
 	}
 
