@@ -1,8 +1,12 @@
 package receiver
 
-import "log"
+import (
+	"log"
 
-func addRecord(data *TestData) {
+	"github.com/VladLeb13/report-maker-lib/datalib"
+)
+
+func addRecord(data *datalib.Report) {
 	//TODO: write to db report
 
 	log.Printf("%+v", data)

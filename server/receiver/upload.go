@@ -7,12 +7,9 @@ import (
 	"net/http"
 
 	"report-maker-server/server/controller"
-)
 
-type TestData struct {
-	Field1 string `json:"f1"`
-	Field2 string `json:"f2"`
-}
+	"github.com/VladLeb13/report-maker-lib/datalib"
+)
 
 func Upload(w http.ResponseWriter, r *http.Request) {
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
@@ -40,7 +37,7 @@ func Upload(w http.ResponseWriter, r *http.Request) {
 		log.Println("Body error: ", err)
 	}
 
-	datalib := &TestData{}
+	datalib := &datalib.Report{}
 	err = json.Unmarshal(content, datalib)
 	if err != nil {
 		log.Println("Unmarshal error: ", err)
