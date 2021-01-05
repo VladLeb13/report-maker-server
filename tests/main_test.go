@@ -1,8 +1,9 @@
 package tests
 
 import (
-	"report-maker-server/server"
 	"testing"
+
+	"report-maker-server/server"
 )
 
 func TestApp(t *testing.T) {
