@@ -1,0 +1,3447 @@
+{
+   "hardware":{
+      "cpu_list":[
+         {
+            "manufacturer":"GenuineIntel",
+            "name":"Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz",
+            "speed":2401,
+            "numberCores":2,
+            "threadCount":2,
+            "caption":"Intel64 Family 6 Model 42 Stepping 7",
+            "description":"Intel64 Family 6 Model 42 Stepping 7"
+         }
+      ],
+      "board":{
+         "manufacturer":"ASUSTeK Computer Inc.",
+         "product":"K53SD",
+         "serialNumber":"BSN12345678901234567",
+         "version":"1.0       ",
+         "bios":{
+            "manufacturer":"American Megatrends Inc.",
+            "name":"BIOS Date: 08/10/12 14:30:44 Ver: 04.06.03",
+            "version":"K53SD.208"
+         }
+      },
+      "hdd_list":[
+         {
+            "serialNumber":"S4FNNZFN903202M",
+            "interfaceType":"IDE",
+            "size":500105,
+            "partitions":7,
+            "model":"Samsung SSD 860 EVO 500GB",
+            "name":"\\\\.\\PHYSICALDRIVE0"
+         },
+         {
+            "serialNumber":"058F63666433",
+            "interfaceType":"USB",
+            "size":0,
+            "partitions":0,
+            "model":"Multiple Card  Reader USB Device",
+            "name":"\\\\.\\PHYSICALDRIVE1"
+         }
+      ],
+      "volumes_list":[
+         {
+            "caption":"C:",
+            "description":"Локальный несъемный диск",
+            "deviceID":"C:",
+            "fileSystem":"NTFS",
+            "freeSpace":17164,
+            "name":"C:",
+            "size":"129187",
+            "volumeName":"OS"
+         },
+         {
+            "caption":"D:",
+            "description":"Локальный несъемный диск",
+            "deviceID":"D:",
+            "fileSystem":"NTFS",
+            "freeSpace":41407,
+            "name":"D:",
+            "size":"165338",
+            "volumeName":"Data"
+         },
+         {
+            "caption":"E:",
+            "description":"Локальный несъемный диск",
+            "deviceID":"E:",
+            "fileSystem":"FAT32",
+            "freeSpace":0,
+            "name":"E:",
+            "size":"9997778944",
+            "volumeName":"RECOVERY"
+         },
+         {
+            "caption":"F:",
+            "description":"Локальный несъемный диск",
+            "deviceID":"F:",
+            "fileSystem":"NTFS",
+            "freeSpace":5,
+            "name":"F:",
+            "size":"504",
+            "volumeName":""
+         },
+         {
+            "caption":"G:",
+            "description":"Компакт-диск",
+            "deviceID":"G:",
+            "fileSystem":"",
+            "freeSpace":0,
+            "name":"G:",
+            "size":"",
+            "volumeName":""
+         },
+         {
+            "caption":"H:",
+            "description":"Компакт-диск",
+            "deviceID":"H:",
+            "fileSystem":"",
+            "freeSpace":0,
+            "name":"H:",
+            "size":"",
+            "volumeName":""
+         },
+         {
+            "caption":"I:",
+            "description":"Съемный диск",
+            "deviceID":"I:",
+            "fileSystem":"",
+            "freeSpace":0,
+            "name":"I:",
+            "size":"",
+            "volumeName":""
+         }
+      ],
+      "nic_list":[
+         {
+            "description":"Qualcomm Atheros AR9002WB-1NG Wireless Network Adapter",
+            "dhcpEnabled":true,
+            "dhcpServer":"192.168.101.1",
+            "ipAddress_list":[
+               "192.168.101.18",
+               "fe80::f511:aa4b:76cb:8fa"
+            ],
+            "defaultIPGateway_list":[
+               "192.168.101.1"
+            ],
+            "dnsServerSearchOrderlist":[
+               "192.168.101.1"
+            ]
+         },
+         {
+            "description":"TAP-Win32 Adapter V9 #2",
+            "dhcpEnabled":false,
+            "dhcpServer":"",
+            "ipAddress_list":[
+               "10.0.0.119"
+            ],
+            "defaultIPGateway_list":null,
+            "dnsServerSearchOrderlist":null
+         }
+      ],
+      "ram_list":[
+         {
+            "capacity":4,
+            "speed":1333,
+            "deviceLocator":"ChannelA-DIMM0",
+            "partNumber":"AD73I1C1674EV     ",
+            "manufacturer":"04CB",
+            "name":"Физическая память",
+            "formFactor":12
+         },
+         {
+            "capacity":4,
+            "speed":1333,
+            "deviceLocator":"ChannelB-DIMM0",
+            "partNumber":"EBJ41UF8BCS0-DJ-F ",
+            "manufacturer":"Elpida",
+            "name":"Физическая память",
+            "formFactor":12
+         }
+      ]
+   },
+   "software":{
+      "os":{
+         "caption":"Майкрософт Windows 10 Домашняя",
+         "buildNumber":"19041",
+         "serialNumber":"00326-10000-00000-AA175",
+         "installDate":"2020-09-18T20:55:44Z",
+         "osArchitecture":"64-разрядная",
+         "version":"10.0.19041",
+         "name":"Майкрософт Windows 10 Домашняя|C:\\WINDOWS|\\Device\\Harddisk0\\Partition2",
+         "domain":"WORKGROUP",
+         "userName":"pc945\\Worker"
+      },
+      "programs_list":[
+         {
+            "name":"Microsoft DCF MUI (Russian) 2013",
+            "installDate":"2018-10-29T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\Microsoft Office\\",
+            "vendor":"Microsoft Corporation",
+            "version":"15.0.4569.1506"
+         },
+         {
+            "name":"SQL Server 2017 Integration Services Scale Out Management Portal",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.1000.169"
+         },
+         {
+            "name":"Microsoft .NET Framework 4.5.1 Multi-Targeting Pack",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"4.5.50932"
+         },
+         {
+            "name":"Поддержка программ Apple (32 бит)",
+            "installDate":"2019-08-25T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\Common Files\\Apple\\Apple Application Support\\",
+            "vendor":"Apple Inc.",
+            "version":"7.6"
+         },
+         {
+            "name":"Языковой пакет для языковой поддержки набора средств Microsoft Visual Studio Tools для работы с приложениями 2015 — RUS",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107.20"
+         },
+         {
+            "name":"Управляющие объекты Microsoft SQL Server 2014 ",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"12.0.2000.8"
+         },
+         {
+            "name":"AdoptOpenJDK JDK with Hotspot 11.0.5.10 (x64)",
+            "installDate":"2019-12-12T00:00:00Z",
+            "installLocation":"C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.5.10-hotspot\\",
+            "vendor":"AdoptOpenJDK",
+            "version":"11.0.5.10"
+         },
+         {
+            "name":"Microsoft Web Deploy 4.0",
+            "installDate":"2019-03-24T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"10.0.1994"
+         },
+         {
+            "name":"Microsoft .NET Framework 4.5 Multi-Targeting Pack",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"4.5.50710"
+         },
+         {
+            "name":"SQL Server Management Studio for Reporting Services",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.17289.0"
+         },
+         {
+            "name":"Microsoft Build Tools 14.0 (x86)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Update for Windows 10 for x64-based Systems (KB4023057)",
+            "installDate":"2019-08-10T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"2.61.0.0"
+         },
+         {
+            "name":"Microsoft .NET CoreRuntime For CoreCon",
+            "installDate":"2019-01-09T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"1.0.0.0"
+         },
+         {
+            "name":"Пакет многоплатформенного нацеливания Microsoft .NET Framework 4.5.1 (Русский)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"4.5.50932"
+         },
+         {
+            "name":"Intel® Hardware Accelerated Execution Manager",
+            "installDate":"2018-05-29T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Intel Corporation",
+            "version":"6.0.5"
+         },
+         {
+            "name":"Microsoft Visual C++ 2008 Redistributable - x64 9.0.21022",
+            "installDate":"2019-03-31T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"9.0.21022"
+         },
+         {
+            "name":"Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"12.0.21005"
+         },
+         {
+            "name":"Пакет многоплатформенного нацеливания Microsoft .NET Framework 4.5.2 (Русский)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"4.5.51209"
+         },
+         {
+            "name":"Microsoft Visual C++ 2013 x86 Debug Runtime - 12.0.21005",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"12.0.21005"
+         },
+         {
+            "name":"SQL Server Management Studio",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.17289.0"
+         },
+         {
+            "name":"Microsoft Visual Studio Services Hub",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"1.0.23107.00"
+         },
+         {
+            "name":"SQL Server 2017 Common Files",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.1000.169"
+         },
+         {
+            "name":"Microsoft Visual C++ 2019 X64 Additional Runtime - 14.24.28127",
+            "installDate":"2020-02-18T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.24.28127"
+         },
+         {
+            "name":"Yarn",
+            "installDate":"2019-05-22T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Yarn Contributors",
+            "version":"1.16.0"
+         },
+         {
+            "name":"Go Programming Language amd64 go1.14.1",
+            "installDate":"2020-03-30T00:00:00Z",
+            "installLocation":"",
+            "vendor":"https://golang.org",
+            "version":"1.14.1"
+         },
+         {
+            "name":"Microsoft Visual Studio Tools for Applications 2015 Language Support Finalizer",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107.20"
+         },
+         {
+            "name":"CA ERwin Process Modeler r7.3",
+            "installDate":"2020-06-05T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\CA\\ERwin Process Modeler r7.3\\",
+            "vendor":"CA, Inc.",
+            "version":"7.003.1773"
+         },
+         {
+            "name":"SQL Server Management Studio for Analysis Services",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.17289.0"
+         },
+         {
+            "name":"Пакет SDK Microsoft .NET Framework 4.5.1 (Русский)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"4.5.51641"
+         },
+         {
+            "name":"Java 8 Update 271",
+            "installDate":"2020-12-15T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\Java\\jre1.8.0_271\\",
+            "vendor":"Oracle Corporation",
+            "version":"8.0.2710.9"
+         },
+         {
+            "name":"Microsoft Visual Studio 2015 Shell (Minimum) Interop Assemblies",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"SQL Server Management Studio",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.17289.0"
+         },
+         {
+            "name":"Microsoft Visual Studio 2015 Shell (Minimum)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Поставщик OLE DB для Microsoft Analysis Services",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"15.0.800.90"
+         },
+         {
+            "name":"Node.js",
+            "installDate":"2020-04-18T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Node.js Foundation",
+            "version":"12.16.2"
+         },
+         {
+            "name":"Языковая служба T-SQL для Microsoft SQL Server 2017 ",
+            "installDate":"2019-02-09T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.1000.169"
+         },
+         {
+            "name":"Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"12.0.21005"
+         },
+         {
+            "name":" Tools for .Net 3.5",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"3.11.50727"
+         },
+         {
+            "name":"Adobe Refresh Manager",
+            "installDate":"2020-11-24T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\",
+            "vendor":"Adobe Systems Incorporated",
+            "version":"1.8.0"
+         },
+         {
+            "name":"Adobe Acrobat Reader DC - Russian",
+            "installDate":"2020-12-11T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\",
+            "vendor":"Adobe Systems Incorporated",
+            "version":"20.013.20074"
+         },
+         {
+            "name":"PuTTY release 0.73",
+            "installDate":"2020-02-19T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Simon Tatham",
+            "version":"0.73.0.0"
+         },
+         {
+            "name":"Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161",
+            "installDate":"2019-10-14T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"9.0.30729.6161"
+         },
+         {
+            "name":"Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"12.0.21005"
+         },
+         {
+            "name":"Microsoft Build Tools Language Resources 14.0 (amd64)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Microsoft Visual C++ 2019 X86 Additional Runtime - 14.24.28127",
+            "installDate":"2020-02-18T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.24.28127"
+         },
+         {
+            "name":"SQL Server Management Studio for Reporting Services Localization",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.17289.0"
+         },
+         {
+            "name":"Microsoft Visual Studio Tools for Applications 2015 x64 Hosting Support",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23829"
+         },
+         {
+            "name":"SQL Server 2017 Management Studio Extensions",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.3026.27"
+         },
+         {
+            "name":"Microsoft SQL Server 2012 Command Line Utilities ",
+            "installDate":"2019-01-10T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"11.3.6020.0"
+         },
+         {
+            "name":"Конструктор пользовательского интерфейса XAML Microsoft Visual Studio 2015 — RUS",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Microsoft Visual C++ 2013 x64 Debug Runtime - 12.0.21005",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"12.0.21005"
+         },
+         {
+            "name":"SQL Server 2017 Management Studio Extensions",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.1000.169"
+         },
+         {
+            "name":"Windows SDK AddOn",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"10.1.0.0"
+         },
+         {
+            "name":"Microsoft Build Tools Language Resources 14.0 (x86)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"SQL Server 2017 Integration Services Scale Out Management Portal",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.1000.169"
+         },
+         {
+            "name":"Microsoft .NET Framework 4 Multi-Targeting Pack",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"4.0.30319"
+         },
+         {
+            "name":"Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.24.28127",
+            "installDate":"2020-02-18T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.24.28127"
+         },
+         {
+            "name":"Visual Studio 2015 Prerequisites - RUS Language Pack",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Microsoft .NET Framework 4.5.2 Multi-Targeting Pack",
+            "installDate":"2018-05-28T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"4.5.51651"
+         },
+         {
+            "name":"Политики для Microsoft SQL Server 2017 ",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.1000.169"
+         },
+         {
+            "name":"Google Update Helper",
+            "installDate":"2020-12-05T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Google LLC",
+            "version":"1.3.36.51"
+         },
+         {
+            "name":"Microsoft Visual Studio 2015 XAML Designer",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Microsoft .NET Native SDK",
+            "installDate":"2019-01-09T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"15.0.24211"
+         },
+         {
+            "name":"CA ERwin Data Modeler r7.3",
+            "installDate":"2020-06-05T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\CA\\ERwin Data Modeler r7.3\\",
+            "vendor":"CA",
+            "version":"7.003.1666"
+         },
+         {
+            "name":"iCloud",
+            "installDate":"2019-08-25T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\Common Files\\Apple\\Internet Services\\",
+            "vendor":"Apple Inc.",
+            "version":"7.13.0.14"
+         },
+         {
+            "name":"SQL Server 2017 Common Files",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.1000.169"
+         },
+         {
+            "name":"Языковой пакет для средства просмотра справки Майкрософт 2.2 - RUS",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"2.2.23107"
+         },
+         {
+            "name":"Поставщик OLE DB для Microsoft Analysis Services",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"15.0.800.90"
+         },
+         {
+            "name":"Microsoft Build Tools 14.0 (amd64)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":" Tools for .Net 3.5 - RUS Lang Pack",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"3.11.50727"
+         },
+         {
+            "name":"Visual Studio 2015 Prerequisites",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Microsoft Visual C++ 2005 Redistributable",
+            "installDate":"2019-10-14T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"8.0.61001"
+         },
+         {
+            "name":"MySQL for Visual Studio 1.2.8",
+            "installDate":"2019-02-09T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\MySQL\\MySQL for Visual Studio 1.2",
+            "vendor":"Oracle",
+            "version":"1.2.8"
+         },
+         {
+            "name":"Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319",
+            "installDate":"2020-01-08T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"10.0.30319"
+         },
+         {
+            "name":"",
+            "installDate":"0001-01-01T00:00:00Z",
+            "installLocation":"",
+            "vendor":"",
+            "version":""
+         },
+         {
+            "name":"AdoptOpenJDK JDK with Hotspot 11.0.5.10 (x86)",
+            "installDate":"2019-12-12T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\AdoptOpenJDK\\jdk-11.0.5.10-hotspot\\",
+            "vendor":"AdoptOpenJDK",
+            "version":"11.0.5.10"
+         },
+         {
+            "name":"Microsoft Visual Studio Tools for Applications 2017 x64 Hosting Support",
+            "installDate":"2019-02-09T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"15.0.27520"
+         },
+         {
+            "name":"Microsoft Visual Studio Tools for Applications 2015 Finalizer",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23829"
+         },
+         {
+            "name":"Росстат.Web-сбор.Оффлайн-модуль",
+            "installDate":"2020-04-01T00:00:00Z",
+            "installLocation":"",
+            "vendor":"ЗАО «КРОК инкорпорейтед»",
+            "version":"2.9.3.2"
+         },
+         {
+            "name":"Ресурсы оболочки Microsoft Visual Studio 2015 Shell (минимальной)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Microsoft Visual Studio Tools for Applications 2015 x86 Hosting Support",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23829"
+         },
+         {
+            "name":"Ресурсы оболочки Microsoft Visual Studio 2015 (изолированной)",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107"
+         },
+         {
+            "name":"Microsoft Visual Studio Tools for Applications 2017 x86 Hosting Support",
+            "installDate":"2019-02-09T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"15.0.27520"
+         },
+         {
+            "name":"Печать НД с PDF417 3.2.4 (пакет)",
+            "installDate":"2020-02-20T00:00:00Z",
+            "installLocation":"",
+            "vendor":"ФГУП ГНИВЦ ФНС РФ в ПФО",
+            "version":"3.2.4"
+         },
+         {
+            "name":"Языковая служба T-SQL для Microsoft SQL Server 2017 ",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.17289.0"
+         },
+         {
+            "name":"Microsoft Visual Studio Tools for Applications 2015 Language Support",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.23107.20"
+         },
+         {
+            "name":"Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.24.28127",
+            "installDate":"2020-02-18T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.24.28127"
+         },
+         {
+            "name":"Java Auto Updater",
+            "installDate":"2020-12-15T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Oracle Corporation",
+            "version":"2.8.271.9"
+         },
+         {
+            "name":"AdoptOpenJDK JRE with Hotspot 11.0.5.10 (x86)",
+            "installDate":"2019-12-12T00:00:00Z",
+            "installLocation":"C:\\Program Files (x86)\\AdoptOpenJDK\\jre-11.0.5.10-hotspot\\",
+            "vendor":"AdoptOpenJDK",
+            "version":"11.0.5.10"
+         },
+         {
+            "name":"Поддержка программ Apple (64 бит)",
+            "installDate":"2019-08-25T00:00:00Z",
+            "installLocation":"C:\\Program Files\\Common Files\\Apple\\Apple Application Support\\",
+            "vendor":"Apple Inc.",
+            "version":"7.6"
+         },
+         {
+            "name":"SQL Server Management Studio for Analysis Services Localization",
+            "installDate":"2019-02-11T00:00:00Z",
+            "installLocation":"",
+            "vendor":"Microsoft Corporation",
+            "version":"14.0.17289.0"
+         }
+      ],
+      "updates_list":[
+         {
+            "hotFixID":"KB4586876",
+            "description":"Update",
+            "installedBy":"NT AUTHORITY\\СИСТЕМА",
+            "installedOn":"2020-12-09T00:00:00Z"
+         },
+         {
+            "hotFixID":"KB4561600",
+            "description":"Security Update",
+            "installedBy":"",
+            "installedOn":"2020-08-08T00:00:00Z"
+         },
+         {
+            "hotFixID":"KB4570334",
+            "description":"Security Update",
+            "installedBy":"",
+            "installedOn":"2020-08-08T00:00:00Z"
+         },
+         {
+            "hotFixID":"KB4577266",
+            "description":"Security Update",
+            "installedBy":"pc945\\Worker",
+            "installedOn":"2020-09-18T00:00:00Z"
+         },
+         {
+            "hotFixID":"KB4580325",
+            "description":"Security Update",
+            "installedBy":"NT AUTHORITY\\СИСТЕМА",
+            "installedOn":"2020-10-16T00:00:00Z"
+         },
+         {
+            "hotFixID":"KB4586864",
+            "description":"Security Update",
+            "installedBy":"NT AUTHORITY\\СИСТЕМА",
+            "installedOn":"2020-11-18T00:00:00Z"
+         },
+         {
+            "hotFixID":"KB4593175",
+            "description":"Security Update",
+            "installedBy":"NT AUTHORITY\\СИСТЕМА",
+            "installedOn":"2020-12-14T00:00:00Z"
+         },
+         {
+            "hotFixID":"KB4592438",
+            "description":"Security Update",
+            "installedBy":"NT AUTHORITY\\СИСТЕМА",
+            "installedOn":"2020-12-16T00:00:00Z"
+         }
+      ],
+      "startup_list":[
+         {
+            "caption":"OneDrive",
+            "command":"\"C:\\Users\\Worker\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe\" /background",
+            "user":"pc945\\Worker",
+            "name":"OneDrive",
+            "location":"HKU\\S-1-5-21-1356776307-1042124093-2512948889-1054\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+         },
+         {
+            "caption":"SecurityHealth",
+            "command":"%windir%\\system32\\SecurityHealthSystray.exe",
+            "user":"Public",
+            "name":"SecurityHealth",
+            "location":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+         },
+         {
+            "caption":"SynAsusAcpi",
+            "command":"%ProgramFiles%\\Synaptics\\SynTP\\SynAsusAcpi.exe",
+            "user":"Public",
+            "name":"SynAsusAcpi",
+            "location":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+         },
+         {
+            "caption":"IgfxTray",
+            "command":"\"C:\\WINDOWS\\system32\\igfxtray.exe\"",
+            "user":"Public",
+            "name":"IgfxTray",
+            "location":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+         },
+         {
+            "caption":"HotKeysCmds",
+            "command":"\"C:\\WINDOWS\\system32\\hkcmd.exe\"",
+            "user":"Public",
+            "name":"HotKeysCmds",
+            "location":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+         },
+         {
+            "caption":"Persistence",
+            "command":"\"C:\\WINDOWS\\system32\\igfxpers.exe\"",
+            "user":"Public",
+            "name":"Persistence",
+            "location":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+         },
+         {
+            "caption":"SynTPEnh",
+            "command":"%ProgramFiles%\\Synaptics\\SynTP\\SynTPEnh.exe",
+            "user":"Public",
+            "name":"SynTPEnh",
+            "location":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+         }
+      ],
+      "shared_list":[
+         {
+            "name":"ADMIN$",
+            "path":"C:\\WINDOWS",
+            "description":"Удаленный Admin",
+            "caption":"Удаленный Admin",
+            "status":"OK"
+         },
+         {
+            "name":"C$",
+            "path":"C:\\",
+            "description":"Стандартный общий ресурс",
+            "caption":"Стандартный общий ресурс",
+            "status":"OK"
+         },
+         {
+            "name":"D$",
+            "path":"D:\\",
+            "description":"Стандартный общий ресурс",
+            "caption":"Стандартный общий ресурс",
+            "status":"OK"
+         },
+         {
+            "name":"E$",
+            "path":"E:\\",
+            "description":"Стандартный общий ресурс",
+            "caption":"Стандартный общий ресурс",
+            "status":"OK"
+         },
+         {
+            "name":"F$",
+            "path":"F:\\",
+            "description":"Стандартный общий ресурс",
+            "caption":"Стандартный общий ресурс",
+            "status":"OK"
+         },
+         {
+            "name":"IPC$",
+            "path":"",
+            "description":"Удаленный IPC",
+            "caption":"Удаленный IPC",
+            "status":"OK"
+         },
+         {
+            "name":"Users",
+            "path":"C:\\Users",
+            "description":"",
+            "caption":"Users",
+            "status":"OK"
+         }
+      ]
+   },
+   "perfomance":{
+      "cpu":[
+         {
+            "percentProcessorPerformance":35,
+            "percentProcessorUtility":3,
+            "processorFrequency":5
+         }
+      ],
+      "processes":[
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"ApplicationFrameHost",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203581530112,
+            "idProcess":2480
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code",
+            "percentProcessorTime":0,
+            "threadCount":31,
+            "virtualBytesPeak":2212167704576,
+            "idProcess":8292
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#1",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203561013248,
+            "idProcess":7476
+         },
+         {
+            "ioReadOperationsPersec":50,
+            "ioWriteOperationsPersec":43,
+            "name":"Code#2",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203941150720,
+            "idProcess":8532
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#3",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203598000128,
+            "idProcess":5888
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#4",
+            "percentProcessorTime":0,
+            "threadCount":27,
+            "virtualBytesPeak":2231803064320,
+            "idProcess":632
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#5",
+            "percentProcessorTime":0,
+            "threadCount":21,
+            "virtualBytesPeak":2212172492800,
+            "idProcess":9288
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#6",
+            "percentProcessorTime":0,
+            "threadCount":28,
+            "virtualBytesPeak":2212159512576,
+            "idProcess":9692
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#7",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212160561152,
+            "idProcess":10132
+         },
+         {
+            "ioReadOperationsPersec":43,
+            "ioWriteOperationsPersec":43,
+            "name":"Code#8",
+            "percentProcessorTime":11,
+            "threadCount":26,
+            "virtualBytesPeak":2231763468288,
+            "idProcess":8676
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#9",
+            "percentProcessorTime":0,
+            "threadCount":29,
+            "virtualBytesPeak":2212159512576,
+            "idProcess":11052
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#10",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212160561152,
+            "idProcess":9964
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#11",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2212159512576,
+            "idProcess":10696
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#12",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2212159512576,
+            "idProcess":3196
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#13",
+            "percentProcessorTime":0,
+            "threadCount":12,
+            "virtualBytesPeak":2212160561152,
+            "idProcess":10892
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Code#14",
+            "percentProcessorTime":0,
+            "threadCount":12,
+            "virtualBytesPeak":2212160561152,
+            "idProcess":2236
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"CodeHelper",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":175767552,
+            "idProcess":10116
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"CodeHelper#1",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":179593216,
+            "idProcess":8948
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Cortana",
+            "percentProcessorTime":0,
+            "threadCount":19,
+            "virtualBytesPeak":5124366336,
+            "idProcess":6628
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"FoxitReaderUpdateService",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":55160832,
+            "idProcess":3852
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"GoogleCrashHandler",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":54816768,
+            "idProcess":6496
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"GoogleCrashHandler64",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":4388888576,
+            "idProcess":6504
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"HxOutlook",
+            "percentProcessorTime":0,
+            "threadCount":28,
+            "virtualBytesPeak":2203896651776,
+            "idProcess":7024
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"HxTsr",
+            "percentProcessorTime":0,
+            "threadCount":16,
+            "virtualBytesPeak":2203570647040,
+            "idProcess":4696
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Idle",
+            "percentProcessorTime":360,
+            "threadCount":4,
+            "virtualBytesPeak":8192,
+            "idProcess":0
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"LockApp",
+            "percentProcessorTime":0,
+            "threadCount":16,
+            "virtualBytesPeak":2203655901184,
+            "idProcess":10288
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"LogWatNT",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":30027776,
+            "idProcess":3920
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Memory Compression",
+            "percentProcessorTime":0,
+            "threadCount":54,
+            "virtualBytesPeak":137232384,
+            "idProcess":1912
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"MsMpEng",
+            "percentProcessorTime":0,
+            "threadCount":32,
+            "virtualBytesPeak":2204388343808,
+            "idProcess":4048
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"NVDisplay.Container",
+            "percentProcessorTime":0,
+            "threadCount":9,
+            "virtualBytesPeak":4419219456,
+            "idProcess":1664
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"NVDisplay.Container#1",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":4508377088,
+            "idProcess":2700
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"NisSrv",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":2203445932032,
+            "idProcess":1516
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"Registry",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":247529472,
+            "idProcess":100
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203609391104,
+            "idProcess":6492
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#1",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203505795072,
+            "idProcess":7088
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#2",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":2203485319168,
+            "idProcess":2940
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#3",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203475644416,
+            "idProcess":7344
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#4",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203508678656,
+            "idProcess":2376
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#5",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203460050944,
+            "idProcess":2548
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#6",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203495448576,
+            "idProcess":7892
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#7",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203478552576,
+            "idProcess":8084
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"RuntimeBroker#8",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203550265344,
+            "idProcess":1088
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"SearchApp",
+            "percentProcessorTime":0,
+            "threadCount":31,
+            "virtualBytesPeak":2238612692992,
+            "idProcess":3012
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"SecurityHealthService",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203426123776,
+            "idProcess":1080
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"SgrmBroker",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203384729600,
+            "idProcess":2912
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"ShellExperienceHost",
+            "percentProcessorTime":0,
+            "threadCount":20,
+            "virtualBytesPeak":2203697422336,
+            "idProcess":3620
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"SpeechRuntime",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203485548544,
+            "idProcess":8076
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"StartMenuExperienceHost",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2204153188352,
+            "idProcess":6364
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"SynTPEnh",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":4440956928,
+            "idProcess":6356
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"SynTPHelper",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":4407615488,
+            "idProcess":576
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"System",
+            "percentProcessorTime":0,
+            "threadCount":160,
+            "virtualBytesPeak":14831616,
+            "idProcess":4
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"SystemSettings",
+            "percentProcessorTime":0,
+            "threadCount":21,
+            "virtualBytesPeak":2203776385024,
+            "idProcess":8784
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"TextInputHost",
+            "percentProcessorTime":0,
+            "threadCount":12,
+            "virtualBytesPeak":2203625684992,
+            "idProcess":10404
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"TiWorker",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203417042944,
+            "idProcess":11828
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"TrustedInstaller",
+            "percentProcessorTime":0,
+            "threadCount":9,
+            "virtualBytesPeak":2203390324736,
+            "idProcess":4932
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"UserOOBEBroker",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203433762816,
+            "idProcess":8968
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"WUDFHost",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203405959168,
+            "idProcess":2440
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"WinStore.App",
+            "percentProcessorTime":0,
+            "threadCount":17,
+            "virtualBytesPeak":5133602816,
+            "idProcess":5184
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"WmiPrvSE",
+            "percentProcessorTime":0,
+            "threadCount":16,
+            "virtualBytesPeak":2204121456640,
+            "idProcess":11984
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"WmiPrvSE#1",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203413028864,
+            "idProcess":3328
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"WmiPrvSE#2",
+            "percentProcessorTime":11,
+            "threadCount":11,
+            "virtualBytesPeak":2203418181632,
+            "idProcess":8756
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"YourPhone",
+            "percentProcessorTime":0,
+            "threadCount":16,
+            "virtualBytesPeak":5230391296,
+            "idProcess":7928
+         },
+         {
+            "ioReadOperationsPersec":220,
+            "ioWriteOperationsPersec":212,
+            "name":"_Total",
+            "percentProcessorTime":400,
+            "threadCount":2029,
+            "virtualBytesPeak":381574388834304,
+            "idProcess":0
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"armsvc",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":77205504,
+            "idProcess":3800
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"bash",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":4964679680,
+            "idProcess":10656
+         },
+         {
+            "ioReadOperationsPersec":7,
+            "ioWriteOperationsPersec":3,
+            "name":"chrome",
+            "percentProcessorTime":0,
+            "threadCount":26,
+            "virtualBytesPeak":2204326547456,
+            "idProcess":10704
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#1",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203517767680,
+            "idProcess":3964
+         },
+         {
+            "ioReadOperationsPersec":57,
+            "ioWriteOperationsPersec":57,
+            "name":"chrome#2",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":2203966210048,
+            "idProcess":5492
+         },
+         {
+            "ioReadOperationsPersec":3,
+            "ioWriteOperationsPersec":3,
+            "name":"chrome#3",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2203864117248,
+            "idProcess":6132
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#4",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203657752576,
+            "idProcess":10708
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#5",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212226428928,
+            "idProcess":9108
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#6",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212226428928,
+            "idProcess":11152
+         },
+         {
+            "ioReadOperationsPersec":57,
+            "ioWriteOperationsPersec":57,
+            "name":"chrome#7",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2219017498624,
+            "idProcess":10448
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":3,
+            "name":"chrome#8",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212234817536,
+            "idProcess":6188
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#9",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203666857984,
+            "idProcess":6564
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#10",
+            "percentProcessorTime":0,
+            "threadCount":15,
+            "virtualBytesPeak":2216710737920,
+            "idProcess":9028
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#11",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212234817536,
+            "idProcess":11008
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#12",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212234817536,
+            "idProcess":9424
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#13",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212234817536,
+            "idProcess":12188
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#14",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212234817536,
+            "idProcess":11340
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"chrome#15",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2212234817536,
+            "idProcess":12116
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"cmd",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":2203384414208,
+            "idProcess":9540
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"cmd#1",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":2203378388992,
+            "idProcess":9372
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203408883712,
+            "idProcess":9560
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#1",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203438297088,
+            "idProcess":8468
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#2",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203422703616,
+            "idProcess":9896
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#3",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203473948672,
+            "idProcess":9536
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#4",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203423227904,
+            "idProcess":5420
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#5",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203438297088,
+            "idProcess":10328
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#6",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203422703616,
+            "idProcess":11328
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#7",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203408883712,
+            "idProcess":5128
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#8",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203434278912,
+            "idProcess":4596
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"conhost#9",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203434278912,
+            "idProcess":5440
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"csrss",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203414937600,
+            "idProcess":536
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"csrss#1",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2203427688448,
+            "idProcess":3216
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"ctfmon",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":2203508150272,
+            "idProcess":7032
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"dasHost",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203437727744,
+            "idProcess":4176
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"debug.test",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":5017923584,
+            "idProcess":7120
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"debug.test#1",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":5083746304,
+            "idProcess":12232
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"dllhost",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203516010496,
+            "idProcess":2520
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"dlv",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":5044719616,
+            "idProcess":3360
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"dlv#1",
+            "percentProcessorTime":11,
+            "threadCount":10,
+            "virtualBytesPeak":5032329216,
+            "idProcess":12268
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"dwm",
+            "percentProcessorTime":5,
+            "threadCount":14,
+            "virtualBytesPeak":2203706298368,
+            "idProcess":5460
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"erl",
+            "percentProcessorTime":0,
+            "threadCount":31,
+            "virtualBytesPeak":4520382464,
+            "idProcess":6184
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"explorer",
+            "percentProcessorTime":0,
+            "threadCount":69,
+            "virtualBytesPeak":2204302995456,
+            "idProcess":6196
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"fontdrvhost",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203389837312,
+            "idProcess":560
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"fontdrvhost#1",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203391488000,
+            "idProcess":2300
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"git-bash",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":4409065472,
+            "idProcess":10260
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"gopls",
+            "percentProcessorTime":0,
+            "threadCount":17,
+            "virtualBytesPeak":5250240512,
+            "idProcess":9516
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"gopls#1",
+            "percentProcessorTime":0,
+            "threadCount":14,
+            "virtualBytesPeak":5222412288,
+            "idProcess":10508
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"jusched",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":85569536,
+            "idProcess":908
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"lic98Service",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":39612416,
+            "idProcess":5520
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"lsass",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":2203421671424,
+            "idProcess":832
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"msiexec",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203409727488,
+            "idProcess":7908
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"powershell",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2204024320000,
+            "idProcess":9576
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"powershell#1",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2204023353344,
+            "idProcess":4892
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"services",
+            "percentProcessorTime":0,
+            "threadCount":9,
+            "virtualBytesPeak":2203400040448,
+            "idProcess":820
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"sihost",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203503316992,
+            "idProcess":6936
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"smss",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203367849984,
+            "idProcess":368
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"spoolsv",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":2203428872192,
+            "idProcess":3580
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost",
+            "percentProcessorTime":0,
+            "threadCount":18,
+            "virtualBytesPeak":2203470876672,
+            "idProcess":404
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#1",
+            "percentProcessorTime":0,
+            "threadCount":12,
+            "virtualBytesPeak":2203427094528,
+            "idProcess":672
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#2",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203424833536,
+            "idProcess":420
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#3",
+            "percentProcessorTime":0,
+            "threadCount":9,
+            "virtualBytesPeak":2203421077504,
+            "idProcess":1128
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#4",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203408683008,
+            "idProcess":1228
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#5",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203404750848,
+            "idProcess":1240
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#6",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203439890432,
+            "idProcess":1344
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#7",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203402563584,
+            "idProcess":1364
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#8",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203441455104,
+            "idProcess":1384
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#9",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":2203472060416,
+            "idProcess":1436
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#10",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203446022144,
+            "idProcess":1552
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#11",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203391471616,
+            "idProcess":1620
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#12",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203408740352,
+            "idProcess":1672
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#13",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203398688768,
+            "idProcess":1712
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#14",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203399294976,
+            "idProcess":1756
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#15",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203402514432,
+            "idProcess":1772
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#16",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203401519104,
+            "idProcess":1780
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#17",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2207730278400,
+            "idProcess":1796
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#18",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203392286720,
+            "idProcess":1812
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#19",
+            "percentProcessorTime":0,
+            "threadCount":14,
+            "virtualBytesPeak":2203437142016,
+            "idProcess":1996
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#20",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203401109504,
+            "idProcess":2028
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#21",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203405516800,
+            "idProcess":2040
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#22",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203399794688,
+            "idProcess":1680
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#23",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203459125248,
+            "idProcess":1848
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#24",
+            "percentProcessorTime":0,
+            "threadCount":10,
+            "virtualBytesPeak":2203411595264,
+            "idProcess":2124
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#25",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203398053888,
+            "idProcess":2224
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#26",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203399032832,
+            "idProcess":2424
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#27",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203418189824,
+            "idProcess":2620
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#28",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203403825152,
+            "idProcess":2656
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#29",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203403751424,
+            "idProcess":2708
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#30",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203393261568,
+            "idProcess":2732
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#31",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203405189120,
+            "idProcess":2852
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#32",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203426512896,
+            "idProcess":2896
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#33",
+            "percentProcessorTime":0,
+            "threadCount":17,
+            "virtualBytesPeak":2203423776768,
+            "idProcess":3060
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#34",
+            "percentProcessorTime":0,
+            "threadCount":15,
+            "virtualBytesPeak":2203412000768,
+            "idProcess":2132
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#35",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203391373312,
+            "idProcess":2172
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#36",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203398926336,
+            "idProcess":3184
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#37",
+            "percentProcessorTime":0,
+            "threadCount":14,
+            "virtualBytesPeak":2203452002304,
+            "idProcess":3368
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#38",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203424677888,
+            "idProcess":3476
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#39",
+            "percentProcessorTime":0,
+            "threadCount":17,
+            "virtualBytesPeak":2203475492864,
+            "idProcess":3648
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#40",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203491995648,
+            "idProcess":3784
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#41",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2203509686272,
+            "idProcess":3792
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#42",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203395117056,
+            "idProcess":3816
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#43",
+            "percentProcessorTime":0,
+            "threadCount":18,
+            "virtualBytesPeak":2203623645184,
+            "idProcess":3840
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#44",
+            "percentProcessorTime":0,
+            "threadCount":16,
+            "virtualBytesPeak":2203451416576,
+            "idProcess":3904
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#45",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203394945024,
+            "idProcess":3952
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#46",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203392147456,
+            "idProcess":3980
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#47",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203411644416,
+            "idProcess":3996
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#48",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203388899328,
+            "idProcess":4040
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#49",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203444129792,
+            "idProcess":4068
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#50",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203413237760,
+            "idProcess":3416
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#51",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203389517824,
+            "idProcess":4116
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#52",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2203423924224,
+            "idProcess":4144
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#53",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203391340544,
+            "idProcess":4484
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#54",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203408285696,
+            "idProcess":4576
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#55",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203393413120,
+            "idProcess":4924
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#56",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203454599168,
+            "idProcess":5164
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#57",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203395825664,
+            "idProcess":5388
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#58",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203441287168,
+            "idProcess":5592
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#59",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203414872064,
+            "idProcess":6840
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#60",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203407884288,
+            "idProcess":7652
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#61",
+            "percentProcessorTime":0,
+            "threadCount":9,
+            "virtualBytesPeak":2203628228608,
+            "idProcess":7744
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#62",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203422330880,
+            "idProcess":7988
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#63",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203456126976,
+            "idProcess":7252
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#64",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203406909440,
+            "idProcess":5860
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#65",
+            "percentProcessorTime":0,
+            "threadCount":13,
+            "virtualBytesPeak":2203450331136,
+            "idProcess":2592
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#66",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203575521280,
+            "idProcess":1068
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#67",
+            "percentProcessorTime":0,
+            "threadCount":7,
+            "virtualBytesPeak":2203492974592,
+            "idProcess":5616
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#68",
+            "percentProcessorTime":0,
+            "threadCount":5,
+            "virtualBytesPeak":2203626553344,
+            "idProcess":6232
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#69",
+            "percentProcessorTime":0,
+            "threadCount":14,
+            "virtualBytesPeak":2203482976256,
+            "idProcess":876
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#70",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203402285056,
+            "idProcess":884
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#71",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203449364480,
+            "idProcess":7436
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#72",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203424182272,
+            "idProcess":8348
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#73",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203397386240,
+            "idProcess":8748
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#74",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203406864384,
+            "idProcess":8852
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#75",
+            "percentProcessorTime":0,
+            "threadCount":2,
+            "virtualBytesPeak":2203415605248,
+            "idProcess":9128
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#76",
+            "percentProcessorTime":0,
+            "threadCount":9,
+            "virtualBytesPeak":2203435229184,
+            "idProcess":9808
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#77",
+            "percentProcessorTime":0,
+            "threadCount":4,
+            "virtualBytesPeak":2203387674624,
+            "idProcess":11084
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"svchost#78",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":2203404824576,
+            "idProcess":6580
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"taskhostw",
+            "percentProcessorTime":0,
+            "threadCount":11,
+            "virtualBytesPeak":2203527966720,
+            "idProcess":1432
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"taskhostw#1",
+            "percentProcessorTime":0,
+            "threadCount":8,
+            "virtualBytesPeak":2203539992576,
+            "idProcess":4324
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"tincd",
+            "percentProcessorTime":0,
+            "threadCount":3,
+            "virtualBytesPeak":4382105600,
+            "idProcess":4016
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"wininit",
+            "percentProcessorTime":0,
+            "threadCount":1,
+            "virtualBytesPeak":2203400339456,
+            "idProcess":740
+         },
+         {
+            "ioReadOperationsPersec":0,
+            "ioWriteOperationsPersec":0,
+            "name":"winlogon",
+            "percentProcessorTime":0,
+            "threadCount":6,
+            "virtualBytesPeak":2203425804288,
+            "idProcess":6944
+         }
+      ],
+      "hdd":[
+         {
+            "percentDiskTime":0,
+            "diskWriteBytesPersec":0,
+            "diskReadBytesPersec":0,
+            "avgDisksecPerTransfer":0,
+            "avgDiskQueueLength":0
+         },
+         {
+            "percentDiskTime":0,
+            "diskWriteBytesPersec":0,
+            "diskReadBytesPersec":0,
+            "avgDisksecPerTransfer":0,
+            "avgDiskQueueLength":0
+         },
+         {
+            "percentDiskTime":0,
+            "diskWriteBytesPersec":0,
+            "diskReadBytesPersec":0,
+            "avgDisksecPerTransfer":0,
+            "avgDiskQueueLength":0
+         }
+      ],
+      "ram":[
+         {
+            "percentCommittedBytesInUse":29,
+            "availableMBytes":3944
+         }
+      ]
+   },
+   "evens":{
+      "events":[
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"Application",
+            "message":"Установщик Windows изменил настройку продукта. Продукт: SQL Server Management Studio for Analysis Services Localization. Версия: 14.0.17289.0. Язык: 1049. Изготовитель: Microsoft Corporation. Изменение настройки завершено с состоянием: 0.",
+            "timeWritten":"2021-01-05T20:53:28Z"
+         },
+         {
+            "user":"",
+            "logFile":"Windows PowerShell",
+            "message":"Поставщик \"Alias\" находится в состоянии Started. \r\n\r\nПодробные сведения: \r\n\tProviderName=Alias\r\n\tNewProviderState=Started\r\n\r\n\tSequenceNumber=3\r\n\r\n\tHostName=ConsoleHost\r\n\tHostVersion=5.1.19041.610\r\n\tHostId=47e5ab14-d9e5-4d1c-8fd1-07abfe4b8795\r\n\tHostApplication=powershell.exe -ExecutionPolicy Restricted -Command $Res = 0; if((Get-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole).State -eq 'Enabled') { $Path = $env:windir + '\\system32\\inetsrv\\config\\applicationHost.Config'; if (Test-Path -Path $Path) { try { [XML]$Xml = Get-Content $Path } catch { $Res = 1 } }; } Write-Host 'Final result:',$Res\r\n\tEngineVersion=\r\n\tRunspaceId=\r\n\tPipelineId=\r\n\tCommandName=\r\n\tCommandType=\r\n\tScriptName=\r\n\tCommandPath=\r\n\tCommandLine=",
+            "timeWritten":"2021-01-05T06:20:25Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"Application",
+            "message":"Подсистемы службы инструментария управления Windows успешно инициализированы.",
+            "timeWritten":"2021-01-05T20:06:44Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Число вариантов загрузки данной системы: 0x1.",
+            "timeWritten":"2021-01-04T09:50:07Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"NTP-клиенту не удалось задать настроенный вручную узел в качестве источника времени из-за ошибки разрешения DNS-имен на \"time.windows.com,0x9\". NTP-клиент повторит попытку через 15 мин., а затем удвоит интервал между попытками. Ошибка: Этот хост неизвестен. (0x80072AF9)",
+            "timeWritten":"2021-01-04T09:50:08Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Служба защиты программного обеспечения запущена.\r\n10.0.19041.685",
+            "timeWritten":"2021-01-05T20:06:40Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Система вышла из состояния пониженного энергопотребления.\r\n\r\nВремя перехода в спящий режим: ‎2020‎-‎12‎-‎31T20:05:32.572924200Z\r\nВремя выхода из спящего режима: ‎2021‎-‎01‎-‎04T09:50:07.298211100Z\r\n\r\nИсточник выхода: Нет данных",
+            "timeWritten":"2021-01-04T09:50:09Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Уведомление о входе пользователя для программы улучшения качества ПО",
+            "timeWritten":"2021-01-04T09:50:11Z"
+         },
+         {
+            "user":"pc945\\Anastasia",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Запуск для приложения COM-сервера с CLSID \r\n{21B896BF-008D-4D01-A27B-26061B960DD7}\r\n и APPID \r\n{03E09F3B-DCE4-44FE-A9CF-82D050827E1C}\r\n пользователю pc945\\Anastasia с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1001) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-04T09:50:19Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{6B3B8D23-FA8D-40B9-8DBD-B950333E2C52}\r\n и APPID \r\n{4839DDB7-58C2-48F5-8283-E1D1807D0D7D}\r\n пользователю NT AUTHORITY\\LOCAL SERVICE с ИД безопасности (S-1-5-19) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-04T09:50:19Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Диспетчер окон рабочего стола зарегистрировал порт сеанса.",
+            "timeWritten":"2021-01-05T20:06:35Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"Application",
+            "message":"Служба профилей пользователей успешно запущена.  \r\n\r\n",
+            "timeWritten":"2021-01-05T20:06:34Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Подсистема EventSystem подавляет повторяющиеся элементы журнала событий в течение 86400 сек.  Таймаут подавления управляется значением REG_DWORD с именем SuppressDuplicateDuration в следующем разделе реестра: HKLM\\Software\\Microsoft\\EventSystem\\EventLog.",
+            "timeWritten":"2021-01-05T20:06:34Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"Application",
+            "message":"Служба профилей пользователей остановлена.  \r\n\r\n",
+            "timeWritten":"2021-01-05T07:28:25Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Ошибка обработки события уведомления из-за недоступности подписчика уведомлений winlogon \u003cWSearch\u003e.",
+            "timeWritten":"2021-01-05T07:28:24Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"Application",
+            "message":"Установщик Windows изменил настройку продукта. Продукт: Поставщик OLE DB для Microsoft Analysis Services. Версия: 15.0.800.90. Язык: 1049. Изготовитель: Microsoft Corporation. Изменение настройки завершено с состоянием: 0.",
+            "timeWritten":"2021-01-05T07:20:44Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Запуск для приложения COM-сервера с CLSID \r\n{21B896BF-008D-4D01-A27B-26061B960DD7}\r\n и APPID \r\n{03E09F3B-DCE4-44FE-A9CF-82D050827E1C}\r\n пользователю pc945\\Worker с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1054) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T06:17:52Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"Application",
+            "message":"Установщик Windows изменил настройку продукта. Продукт: Языковой пакет для средства просмотра справки Майкрософт 2.2 - RUS. Версия: 2.2.23107. Язык: 1049. Изготовитель: Microsoft Corporation. Изменение настройки завершено с состоянием: 0.",
+            "timeWritten":"2021-01-05T07:20:44Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Перезапуск службы защиты программного обеспечения успешно запланирован на 2021-01-05T08:17:04Z. Причина: RulesEngine.",
+            "timeWritten":"2021-01-05T06:51:04Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Anastasia\\AppData\\Local\\Packages\\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\\Settings\\settings.dat очищен; обновлено разделов: 21; создано измененных страниц: 4.",
+            "timeWritten":"2021-01-04T09:50:33Z"
+         },
+         {
+            "user":"pc945\\Anastasia",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}\r\n и APPID \r\n{15C20B67-12E7-4BB6-92BB-7AFF07997402}\r\n пользователю pc945\\Anastasia с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1001) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-04T09:51:04Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Обработчик правил сообщил о сбое попытки активации корпоративной лицензии.\r\nПричина:0x8007267C\r\nAppId: 0ff1ce15-a989-479d-af46-f275c6370663, SkuId: e13ac10e-75d0-4aff-a0cd-764982cf541c\r\nТриггер: UserLogon(7)",
+            "timeWritten":"2021-01-05T06:16:32Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Anastasia\\AppData\\Local\\Packages\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\Settings\\settings.dat очищен; обновлено разделов: 2; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-04T09:51:11Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Обработчик правил сообщил о сбое попытки активации корпоративной лицензии.\r\nПричина:0x8007267C\r\nAppId: 0ff1ce15-a989-479d-af46-f275c6370663, SkuId: b322da9c-a2e2-4058-9e4e-f59a6970bd69\r\nТриггер: TimerEvent",
+            "timeWritten":"2021-01-05T06:16:25Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Смена источника питания.",
+            "timeWritten":"2021-01-04T09:59:09Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Ошибка обработки события уведомления из-за недоступности подписчика уведомлений winlogon \u003cWSearch\u003e.",
+            "timeWritten":"2021-01-04T12:34:08Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Вручную\" на \"Автоматически\".",
+            "timeWritten":"2021-01-04T10:10:46Z"
+         },
+         {
+            "user":"pc945\\Anastasia",
+            "logFile":"System",
+            "message":"Параметры разрешений по умолчанию для компьютера не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{C2F03A33-21F5-47FA-B4BB-156362A2F239}\r\n и APPID \r\n{316CDED5-E4AE-4B15-9113-7055D84DCC97}\r\n пользователю pc945\\Anastasia с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1001) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Microsoft.Windows.ShellExperienceHost_10.0.19041.610_neutral_neutral_cw5n1h2txyewy с ИД безопасности (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-04T10:10:48Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Автоматически\" на \"Вручную\".",
+            "timeWritten":"2021-01-04T10:12:53Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Система переходит в спящий режим.\r\n\r\nПричина: Battery",
+            "timeWritten":"2021-01-04T11:32:39Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"NTP-клиенту не удалось задать настроенный вручную узел в качестве источника времени из-за ошибки разрешения DNS-имен на \"time.windows.com,0x9\". NTP-клиент повторит попытку через 15 мин., а затем удвоит интервал между попытками. Ошибка: Этот хост неизвестен. (0x80072AF9)",
+            "timeWritten":"2021-01-04T11:33:15Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Смена источника питания.",
+            "timeWritten":"2021-01-04T11:33:15Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"NTP-клиенту не удалось задать настроенный вручную узел в качестве источника времени из-за ошибки разрешения DNS-имен на \"time.windows.com,0x9\". NTP-клиент повторит попытку через 15 мин., а затем удвоит интервал между попытками. Ошибка: Этот хост неизвестен. (0x80072AF9)",
+            "timeWritten":"2021-01-04T11:33:16Z"
+         },
+         {
+            "user":"pc945\\Anastasia",
+            "logFile":"System",
+            "message":"Параметры разрешений по умолчанию для компьютера не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{C2F03A33-21F5-47FA-B4BB-156362A2F239}\r\n и APPID \r\n{316CDED5-E4AE-4B15-9113-7055D84DCC97}\r\n пользователю pc945\\Anastasia с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1001) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Microsoft.Windows.ShellExperienceHost_10.0.19041.610_neutral_neutral_cw5n1h2txyewy с ИД безопасности (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-04T11:33:17Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Anastasia\\AppData\\Local\\Packages\\Microsoft.LockApp_cw5n1h2txyewy\\Settings\\settings.dat очищен; обновлено разделов: 3; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-04T11:33:18Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"NTP-клиенту не удалось задать настроенный вручную узел в качестве источника времени из-за ошибки разрешения DNS-имен на \"time.windows.com,0x9\". NTP-клиент повторит попытку через 15 мин., а затем удвоит интервал между попытками. Ошибка: Этот хост неизвестен. (0x80072AF9)",
+            "timeWritten":"2021-01-04T11:33:19Z"
+         },
+         {
+            "user":"NT AUTHORITY\\NETWORK SERVICE",
+            "logFile":"System",
+            "message":"Разрешение имен для имени aaslomfzsnai истекло после отсутствия ответа от настроенных серверов DNS.",
+            "timeWritten":"2021-01-04T12:20:44Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Уведомление о выходе пользователя для программы улучшения качества ПО",
+            "timeWritten":"2021-01-04T12:34:08Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Система переходит в спящий режим.\r\n\r\nПричина: Application API",
+            "timeWritten":"2021-01-04T12:34:11Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"NTP-клиенту не удалось задать настроенный вручную узел в качестве источника времени из-за ошибки разрешения DNS-имен на \"time.windows.com,0x9\". NTP-клиент повторит попытку через 15 мин., а затем удвоит интервал между попытками. Ошибка: Этот хост неизвестен. (0x80072AF9)",
+            "timeWritten":"2021-01-04T12:34:14Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Система возобновила работу после режима сна.",
+            "timeWritten":"2021-01-04T12:34:14Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"NTP-клиенту не удалось задать настроенный вручную узел в качестве источника времени из-за ошибки разрешения DNS-имен на \"time.windows.com,0x9\". NTP-клиент повторит попытку через 15 мин., а затем удвоит интервал между попытками. Ошибка: Этот хост неизвестен. (0x80072AF9)",
+            "timeWritten":"2021-01-05T06:16:16Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Использовалась следующая политика меню загрузки: 0x1.",
+            "timeWritten":"2021-01-05T06:16:16Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Уведомление о входе пользователя для программы улучшения качества ПО",
+            "timeWritten":"2021-01-05T06:16:17Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Обработчик правил сообщил о сбое попытки активации корпоративной лицензии.\r\nПричина:0x8007267C\r\nAppId: 0ff1ce15-a989-479d-af46-f275c6370663, SkuId: e13ac10e-75d0-4aff-a0cd-764982cf541c\r\nТриггер: TimerEvent",
+            "timeWritten":"2021-01-04T09:50:50Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Система вышла из состояния пониженного энергопотребления.\r\n\r\nВремя перехода в спящий режим: ‎2021‎-‎01‎-‎04T12:34:10.078885600Z\r\nВремя выхода из спящего режима: ‎2021‎-‎01‎-‎05T06:16:16.417236100Z\r\n\r\nИсточник выхода: Нет данных",
+            "timeWritten":"2021-01-05T06:16:18Z"
+         },
+         {
+            "user":"pc945\\Anastasia",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Запуск для приложения COM-сервера с CLSID \r\n{21B896BF-008D-4D01-A27B-26061B960DD7}\r\n и APPID \r\n{03E09F3B-DCE4-44FE-A9CF-82D050827E1C}\r\n пользователю pc945\\Anastasia с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1001) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T06:16:19Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{6B3B8D23-FA8D-40B9-8DBD-B950333E2C52}\r\n и APPID \r\n{4839DDB7-58C2-48F5-8283-E1D1807D0D7D}\r\n пользователю NT AUTHORITY\\LOCAL SERVICE с ИД безопасности (S-1-5-19) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T06:16:19Z"
+         },
+         {
+            "user":"",
+            "logFile":"Application",
+            "message":"Миграция прежних версий без подключения к сети прошла успешно.",
+            "timeWritten":"2021-01-04T09:50:24Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{6B3B8D23-FA8D-40B9-8DBD-B950333E2C52}\r\n и APPID \r\n{4839DDB7-58C2-48F5-8283-E1D1807D0D7D}\r\n пользователю NT AUTHORITY\\LOCAL SERVICE с ИД безопасности (S-1-5-19) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T06:16:19Z"
+         },
+         {
+            "user":"pc945\\Anastasia",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}\r\n и APPID \r\n{15C20B67-12E7-4BB6-92BB-7AFF07997402}\r\n пользователю pc945\\Anastasia с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1001) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T06:17:07Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Уведомление о выходе пользователя для программы улучшения качества ПО",
+            "timeWritten":"2021-01-05T06:17:19Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}\r\n и APPID \r\n{15C20B67-12E7-4BB6-92BB-7AFF07997402}\r\n пользователю pc945\\Worker с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1054) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T20:22:08Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Автоматически\" на \"Вручную\".",
+            "timeWritten":"2021-01-05T20:21:13Z"
+         },
+         {
+            "user":"NT AUTHORITY\\NETWORK SERVICE",
+            "logFile":"System",
+            "message":"Разрешение имен для имени wpad истекло после отсутствия ответа от настроенных серверов DNS.",
+            "timeWritten":"2021-01-05T20:20:51Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.LockApp_cw5n1h2txyewy\\Settings\\settings.dat очищен; обновлено разделов: 3; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T20:20:20Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Параметры разрешений по умолчанию для компьютера не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{C2F03A33-21F5-47FA-B4BB-156362A2F239}\r\n и APPID \r\n{316CDED5-E4AE-4B15-9113-7055D84DCC97}\r\n пользователю pc945\\Worker с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1054) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Microsoft.Windows.ShellExperienceHost_10.0.19041.610_neutral_neutral_cw5n1h2txyewy с ИД безопасности (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T20:20:19Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Система вышла из состояния пониженного энергопотребления.\r\n\r\nВремя перехода в спящий режим: ‎2021‎-‎01‎-‎05T20:16:49.612080900Z\r\nВремя выхода из спящего режима: ‎2021‎-‎01‎-‎05T20:20:17.339567500Z\r\n\r\nИсточник выхода: Нет данных",
+            "timeWritten":"2021-01-05T20:20:19Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Диспетчер загрузки затратил 0 мс на ожидание ввода данных пользователем.",
+            "timeWritten":"2021-01-05T20:20:17Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Процесс пользовательского режима попытался изменить состояние системы путем вызова API SetSuspendState или SetSystemPowerState.",
+            "timeWritten":"2021-01-05T20:16:49Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Вручную\" на \"Автоматически\".",
+            "timeWritten":"2021-01-05T20:15:32Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}\r\n и APPID \r\n{15C20B67-12E7-4BB6-92BB-7AFF07997402}\r\n пользователю pc945\\Worker с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1054) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T20:14:31Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Установка завершена: следующее обновление было успешно установлено: Обновление механизма обнаружения угроз для Microsoft Defender Antivirus - KB2267602 (версия 1.329.1700.0)",
+            "timeWritten":"2021-01-05T20:14:29Z"
+         },
+         {
+            "user":"NT AUTHORITY\\NETWORK SERVICE",
+            "logFile":"System",
+            "message":"Разрешение имен для имени dc.services.visualstudio.com истекло после отсутствия ответа от настроенных серверов DNS.",
+            "timeWritten":"2021-01-05T20:13:46Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}\r\n и APPID \r\n{15C20B67-12E7-4BB6-92BB-7AFF07997402}\r\n пользователю pc945\\Worker с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1054) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T20:13:29Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.WindowsAlarms_8wekyb3d8bbwe\\Settings\\settings.dat очищен; обновлено разделов: 4; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T20:11:00Z"
+         },
+         {
+            "user":"pc945\\Anastasia",
+            "logFile":"System",
+            "message":"Регистрация сервера {D63B10C5-BB46-4990-A94F-E40B9D520160} DCOM не выполнена за отведенное время ожидания.",
+            "timeWritten":"2021-01-05T20:10:23Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Автоматически\" на \"Вручную\".",
+            "timeWritten":"2021-01-05T20:08:54Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Следующие драйверы загрузки или запуска системы не загружены: \r\ndam",
+            "timeWritten":"2021-01-05T20:06:42Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Фильтр файловой системы \"aksdf\" (версия 5.1, ‎2016‎-‎11‎-‎17T21:28:28.000000000Z) успешно загружен и зарегистрирован у диспетчера фильтров.",
+            "timeWritten":"2021-01-05T20:06:37Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Служба клиента DHCPv6 запущена",
+            "timeWritten":"2021-01-05T20:06:34Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Фильтр файловой системы \"bindflt\" (версия 10.0, ‎2018‎-‎04‎-‎05T05:18:59.000000000Z) успешно загружен и зарегистрирован у диспетчера фильтров.",
+            "timeWritten":"2021-01-05T20:06:34Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Intel(R) Management Engine Interface driver has started successfully.",
+            "timeWritten":"2021-01-05T20:06:31Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Сбой загрузки драйвера \\Driver\\WudfRd для устройства ROOT\\WPD\\0000.",
+            "timeWritten":"2021-01-05T20:06:31Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Системное время завершения работы операционной системы: ‎2021‎-‎01‎-‎05T07:28:32.800323000Z.",
+            "timeWritten":"2021-01-05T07:28:32Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Служба автонастройки беспроводной сети остановлена успешно.\r\n",
+            "timeWritten":"2021-01-05T07:28:26Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Время работоспособного состояния 13 сек.",
+            "timeWritten":"2021-01-05T20:06:34Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Остановка клиентской службы DHCPv4. Значение флага завершения работы: 1",
+            "timeWritten":"2021-01-05T07:28:25Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Уведомление о выходе пользователя для программы улучшения качества ПО",
+            "timeWritten":"2021-01-05T07:28:25Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Служба журнала событий остановлена.",
+            "timeWritten":"2021-01-05T07:28:25Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Регистрация сервера {94269C4E-071A-4116-90E6-52E557067E4E} DCOM не выполнена за отведенное время ожидания.",
+            "timeWritten":"2021-01-05T07:28:23Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Автоматически\" на \"Вручную\".",
+            "timeWritten":"2021-01-05T07:19:33Z"
+         },
+         {
+            "user":"NT AUTHORITY\\NETWORK SERVICE",
+            "logFile":"System",
+            "message":"Разрешение имен для имени wpad истекло после отсутствия ответа от настроенных серверов DNS.",
+            "timeWritten":"2021-01-05T07:01:22Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Автоматически\" на \"Вручную\".",
+            "timeWritten":"2021-01-05T07:00:22Z"
+         },
+         {
+            "user":"",
+            "logFile":"System",
+            "message":"Время работоспособного состояния 1441895 сек.",
+            "timeWritten":"2021-01-05T07:00:00Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Вручную\" на \"Автоматически\".",
+            "timeWritten":"2021-01-05T06:57:43Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}\r\n и APPID \r\n{15C20B67-12E7-4BB6-92BB-7AFF07997402}\r\n пользователю pc945\\Worker с ИД безопасности (S-1-5-21-1356776307-1042124093-2512948889-1054) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T06:46:36Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Тип запуска службы \"Фоновая интеллектуальная служба передачи (BITS)\" был изменен с \"Автоматически\" на \"Вручную\".",
+            "timeWritten":"2021-01-05T06:32:25Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.BingWeather_8wekyb3d8bbwe\\Settings\\settings.dat очищен; обновлено разделов: 1; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T06:19:29Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\\Settings\\settings.dat очищен; обновлено разделов: 2; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T06:19:14Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.WindowsCalculator_8wekyb3d8bbwe\\Settings\\settings.dat очищен; обновлено разделов: 1; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T06:19:13Z"
+         },
+         {
+            "user":"NT AUTHORITY\\NETWORK SERVICE",
+            "logFile":"System",
+            "message":"Разрешение имен для имени wpad истекло после отсутствия ответа от настроенных серверов DNS.",
+            "timeWritten":"2021-01-05T06:18:25Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.YourPhone_8wekyb3d8bbwe\\Settings\\settings.dat очищен; обновлено разделов: 24; создано измененных страниц: 6.",
+            "timeWritten":"2021-01-05T06:18:25Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe\\Settings\\settings.dat очищен; обновлено разделов: 2; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T06:18:08Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\\Settings\\settings.dat очищен; обновлено разделов: 4; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T06:18:01Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy\\Settings\\settings.dat очищен; обновлено разделов: 3; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T06:18:01Z"
+         },
+         {
+            "user":"pc945\\Worker",
+            "logFile":"System",
+            "message":"Журнал доступа в кусте \\??\\C:\\Users\\Worker\\AppData\\Local\\Packages\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\Settings\\settings.dat очищен; обновлено разделов: 2; создано измененных страниц: 1.",
+            "timeWritten":"2021-01-05T06:17:58Z"
+         },
+         {
+            "user":"NT AUTHORITY\\LOCAL SERVICE",
+            "logFile":"System",
+            "message":"Параметры разрешений для конкретного приложения не дают разрешения Локально Активация для приложения COM-сервера с CLSID \r\n{6B3B8D23-FA8D-40B9-8DBD-B950333E2C52}\r\n и APPID \r\n{4839DDB7-58C2-48F5-8283-E1D1807D0D7D}\r\n пользователю NT AUTHORITY\\LOCAL SERVICE с ИД безопасности (S-1-5-19) и адресом LocalHost (с использованием LRPC), выполняемого в контейнере приложения Недоступно с ИД безопасности (Недоступно). Это разрешение безопасности можно изменить с помощью средства администрирования служб компонентов.",
+            "timeWritten":"2021-01-05T06:17:52Z"
+         },
+         {
+            "user":"NT AUTHORITY\\СИСТЕМА",
+            "logFile":"Application",
+            "message":"Установщик Windows изменил настройку продукта. Продукт: SQL Server Management Studio for Analysis Services Localization. Версия: 14.0.17289.0. Язык: 1049. Изготовитель: Microsoft Corporation. Изменение настройки завершено с состоянием: 0.",
+            "timeWritten":"2021-01-05T07:25:24Z"
+         },
+         {
+            "user":"",
+            "logFile":"Windows PowerShell",
+            "message":"Поставщик \"Registry\" находится в состоянии Started. \r\n\r\nПодробные сведения: \r\n\tProviderName=Registry\r\n\tNewProviderState=Started\r\n\r\n\tSequenceNumber=1\r\n\r\n\tHostName=ConsoleHost\r\n\tHostVersion=5.1.19041.610\r\n\tHostId=47e5ab14-d9e5-4d1c-8fd1-07abfe4b8795\r\n\tHostApplication=powershell.exe -ExecutionPolicy Restricted -Command $Res = 0; if((Get-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole).State -eq 'Enabled') { $Path = $env:windir + '\\system32\\inetsrv\\config\\applicationHost.Config'; if (Test-Path -Path $Path) { try { [XML]$Xml = Get-Content $Path } catch { $Res = 1 } }; } Write-Host 'Final result:',$Res\r\n\tEngineVersion=\r\n\tRunspaceId=\r\n\tPipelineId=\r\n\tCommandName=\r\n\tCommandType=\r\n\tScriptName=\r\n\tCommandPath=\r\n\tCommandLine=",
+            "timeWritten":"2021-01-05T06:20:25Z"
+         }
+      ]
+   }
+}

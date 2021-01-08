@@ -7,6 +7,7 @@ import (
 	"net/http"
 
 	"report-maker-server/server/controller"
+	"report-maker-server/server/normalizer"
 
 	"github.com/VladLeb13/report-maker-lib/datalib"
 )
@@ -43,7 +44,7 @@ func Upload(w http.ResponseWriter, r *http.Request) {
 		log.Println("Unmarshal error: ", err)
 	}
 
-	normalized(datalib)
+	normalizer.Actions(datalib)
 
 	addRecord(datalib)
 
