@@ -23,13 +23,25 @@ func main() {
 		Data:   make(chan class.Data),
 		Result: make(chan []string),
 	}
+	faultTlStruct := tools.FaultTolerantAnalyzerStruct{
+		Data:   make(chan tools.FaultTolerantParameters),
+		Result: make(chan float64),
+	}
+	//Используются внутри воркеров
 	ctx.Context = context.WithValue(ctx.Context, "PerformanceAnalyzerStruct", perfStruct)
+	ctx.Context = context.WithValue(ctx.Context, "FaultTolerantAnalyzerStruct", faultTlStruct)
 
 	perfChan := tools.PerfomanceChan{
 		DataForPerformanceAnalyze: make(chan tools.DataForPerformanceAnalyze),
 		AnalysisResult:            make(chan tools.PerformanceAnalysisResult),
 	}
 	ctx.Context = context.WithValue(ctx.Context, "PerfomanceChan", perfChan)
+
+	faultTlChan := tools.FaultTolerantChan{
+		DataFaultTolerantAnalyze: make(chan tools.FaultTolerantParameters),
+		AnalysisResult:           make(chan float64),
+	}
+	ctx.Context = context.WithValue(ctx.Context, "FaultTolerantChan", faultTlChan)
 
 	go classifier.Manager(&ctx)
 
