@@ -11,16 +11,6 @@ type (
 		Result chan []string
 	}
 
-	PerformanceParameters struct {
-		RAMVolume float64
-		RAMSpeed  float64
-		CPUFreq   float64
-		CPUCore   float64
-		CPUThread float64
-		DiskType  float64
-		Cluster   PerformanceParametersCluster
-	}
-
 	PerformanceParametersCluster struct {
 		High   float64
 		Normal float64
@@ -70,4 +60,96 @@ func (d *DataForPerformanceAnalyze) Set(params []PerformanceParameters) {
 			floatToString(v.Cluster.Low),
 		})
 	}
+}
+
+type PerformanceParameters struct {
+	RAMVolume float64
+	RAMSpeed  float64
+	CPUFreq   float64
+	CPUCore   float64
+	CPUThread float64
+	DiskType  float64
+	Cluster   PerformanceParametersCluster
+}
+
+func (pp *PerformanceParameters) Set(ram_sie int, ram_freq int,
+	cpu_freq int, cpu_cores int, cpu_thread int, disk_type int) (params []PerformanceParameters) {
+
+	pp.RAMVolume = float64(ram_sie)
+	pp.RAMSpeed = float64(ram_freq)
+	pp.CPUFreq = float64(cpu_freq)
+	pp.CPUCore = float64(cpu_cores)
+	pp.CPUThread = float64(cpu_thread)
+	pp.DiskType = float64(disk_type)
+
+	pp.normalize()
+
+	param1 := PerformanceParameters{
+		RAMVolume: pp.RAMVolume,
+		RAMSpeed:  pp.RAMSpeed,
+		CPUFreq:   pp.CPUFreq,
+		CPUCore:   pp.CPUCore,
+		CPUThread: pp.CPUThread,
+		DiskType:  pp.DiskType,
+		Cluster: PerformanceParametersCluster{
+			High:   1.0,
+			Normal: 0.0,
+			Low:    0.0,
+		},
+	}
+
+	params = append(params, param1)
+
+	param2 := PerformanceParameters{
+		RAMVolume: pp.RAMVolume,
+		RAMSpeed:  pp.RAMSpeed,
+		CPUFreq:   pp.CPUFreq,
+		CPUCore:   pp.CPUCore,
+		CPUThread: pp.CPUThread,
+		DiskType:  pp.DiskType,
+		Cluster: PerformanceParametersCluster{
+			High:   0.0,
+			Normal: 1.0,
+			Low:    0.0,
+		},
+	}
+
+	params = append(params, param2)
+
+	param3 := PerformanceParameters{
+		RAMVolume: pp.RAMVolume,
+		RAMSpeed:  pp.RAMSpeed,
+		CPUFreq:   pp.CPUFreq,
+		CPUCore:   pp.CPUCore,
+		CPUThread: pp.CPUThread,
+		DiskType:  pp.DiskType,
+		Cluster: PerformanceParametersCluster{
+			High:   0.0,
+			Normal: 0.0,
+			Low:    1.0,
+		},
+	}
+
+	params = append(params, param3)
+	return
+}
+func (pp *PerformanceParameters) normalize() {
+	ram_volume := pp.RAMVolume * 1024
+	ram_volume = ram_volume / 100000
+	pp.RAMVolume = ram_volume
+
+	ram_speed := pp.RAMSpeed / 10000
+	pp.RAMSpeed = ram_speed
+
+	cpu_freq := pp.CPUFreq / 10000
+	pp.CPUFreq = cpu_freq
+
+	cpu_core := pp.CPUCore / 10
+	pp.CPUCore = cpu_core
+
+	cpu_thread := pp.CPUThread / 10
+	pp.CPUThread = cpu_thread
+
+	disk_type := pp.DiskType / 10
+	pp.DiskType = disk_type
 }
