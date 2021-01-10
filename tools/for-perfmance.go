@@ -5,6 +5,7 @@ import (
 )
 
 type (
+	//Используется внутри воркеров
 	PerformanceAnalyzerStruct struct {
 		Data   chan class.Data
 		Result chan []string
@@ -27,6 +28,7 @@ type (
 	}
 )
 
+//Используется внутри приложения
 type PerfomanceChan struct {
 	DataForPerformanceAnalyze chan DataForPerformanceAnalyze
 	AnalysisResult            chan PerformanceAnalysisResult
