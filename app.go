@@ -5,6 +5,9 @@ import (
 	"log"
 
 	"report-maker-server/classifier"
+	"report-maker-server/config"
+	"report-maker-server/database"
+	"report-maker-server/scheduler"
 	"report-maker-server/server"
 	"report-maker-server/tools"
 
@@ -18,6 +21,15 @@ func main() {
 	ctx := tools.AppContex{
 		Context: context.Background(),
 	}
+
+	cnf, err := config.Parse()
+	if err != nil {
+		log.Fatal("Error parsing config file")
+	}
+	ctx.Context = context.WithValue(ctx.Context, "config", cnf)
+
+	db := database.Get(&ctx)
+	ctx.Context = context.WithValue(ctx.Context, "database", db)
 
 	perfStruct := tools.PerformanceAnalyzerStruct{
 		Data:   make(chan class.Data),
@@ -45,18 +57,11 @@ func main() {
 
 	go classifier.Manager(&ctx)
 
-	err := server.Serve()
+	go scheduler.Start(&ctx)
+
+	err = server.Serve()
 	if err != nil {
 		log.Println(err)
 	}
 
 }
-
-//answer := strings.Join(res, " ")
-//for i, v := range d.RawData {
-//elem := strings.Join(v, " ")
-//if answer == elem {
-//log.Println("bingo!!! утверждение номер: " + strconv.Itoa(i) + " верно")
-//log.Println(v)
-//}
-//}
