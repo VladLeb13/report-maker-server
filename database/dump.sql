@@ -1,12 +1,5 @@
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
-CREATE TABLE `test_table` (
-	`id`	INTEGER NOT NULL,
-	`name`	TEXT NOT NULL,
-	PRIMARY KEY(`id`)
-);
-INSERT INTO test_table VALUES(1,'First');
-INSERT INTO test_table VALUES(2,'Second');
 CREATE TABLE `Program_list` (
 	`ID`	TEXT NOT NULL UNIQUE,
 	`ProgramID`	TEXT NOT NULL,
