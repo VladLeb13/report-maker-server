@@ -94,7 +94,7 @@ CREATE TABLE `Hardware` (
 CREATE TABLE `Workstation` (
 	`ID`	TEXT NOT NULL UNIQUE,
 	`Name`	TEXT NOT NULL UNIQUE,
-	`Comment`	REAL,
+	`Comment`	TEXT,
 	`Allow_analysis`	INTEGER NOT NULL DEFAULT 0,
 	`HardwareID`	TEXT NOT NULL,
 	`Program_listID`	TEXT NOT NULL,
