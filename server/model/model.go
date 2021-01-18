@@ -19,8 +19,8 @@ type (
 		HDD_listID    string `json:"HDD_listID"`
 	}
 	Program_list struct {
-		ID        string `json:"ID"`
-		ProgramID string `json:"ProgramID"`
+		ID        string   `json:"ID"`
+		ProgramID []string `json:"ProgramID"`
 	}
 
 	Perfomance struct {
@@ -50,9 +50,15 @@ type Program struct {
 
 //Hardware
 type (
+	Matherboard struct {
+		ID      string `json:"ID"`
+		Name    string `json:"Name"`
+		Model   string `json:"Model"`
+		Product string `json:"Product"`
+	}
 	CPU_list struct {
-		ID    string `json:"ID"`
-		CPUID string `json:"CPUID"`
+		ID    string   `json:"ID"`
+		CPUID []string `json:"CPUID"`
 	}
 	CPU struct {
 		ID             string `json:"ID"`
@@ -63,8 +69,8 @@ type (
 		Number_threads int    `json:"Number_threads"`
 	}
 	RAM_list struct {
-		ID    string `json:"ID"`
-		RAMID string `json:"RAMID"`
+		ID    string   `json:"ID"`
+		RAMID []string `json:"RAMID"`
 	}
 	RAM struct {
 		ID            string `json:"ID"`
@@ -74,8 +80,8 @@ type (
 		Serial_number string `json:"Serial_number"`
 	}
 	HDD_list struct {
-		ID    string `json:"ID"`
-		HDDID string `json:"HDDID"`
+		ID    string   `json:"ID"`
+		HDDID []string `json:"HDDID"`
 	}
 	HDD struct {
 		ID    string `json:"ID"`
@@ -106,3 +112,30 @@ type (
 		Upgrade_list_itemID string `json:"Upgrade_list_itemID"`
 	}
 )
+
+type TO_WR struct {
+	Workstation     Workstation
+	Hardware        Hardware
+	Program_list    Program_list
+	Perfomance      Perfomance
+	Fault_tolerance Fault_tolerance
+
+	Programs []Program
+
+	Matherboard Matherboard
+
+	CPU_list CPU_list
+	CPUs     []CPU
+
+	RAM_list RAM_list
+	RAMs     []RAM
+
+	HDD_list HDD_list
+	HDDs     []HDD
+
+	Monitoring_result Monitoring_result
+	Monitoring        Monitoring
+
+	Upgrade_list_item        Upgrade_list_item
+	Upgrade_workstation_list Upgrade_workstation_list
+}

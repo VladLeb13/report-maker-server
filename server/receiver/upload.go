@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"report-maker-server/database/writer"
 
 	"report-maker-server/server/controller"
 	"report-maker-server/server/normalizer"
@@ -46,6 +47,6 @@ func Upload(w http.ResponseWriter, r *http.Request) {
 
 	normalizer.Actions(datalib)
 
-	addRecord(datalib)
+	writer.AddRecord(datalib)
 
 }
