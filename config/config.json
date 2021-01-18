@@ -1,6 +1,6 @@
 {
-  "dbPath": "/home",
-  "templatePath": "/home"
+  "database_path": "/home/worker/Studing/report-maker-server/src/database/",
+  "template_path": "/home",
+  "time_format": "RFC822",
+  "scheduler_cycle": "4"
 }
-
-RFC822

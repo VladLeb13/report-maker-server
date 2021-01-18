@@ -5,6 +5,9 @@ import (
 	"log"
 	"sync"
 
+	"report-maker-server/config"
+	"report-maker-server/tools"
+
 	_ "github.com/mattn/go-sqlite3"
 )
 
@@ -13,12 +16,11 @@ type Database struct {
 	db *sql.DB
 }
 
-func (d *Database) SynchInsert(query string, args ...interface{}) (err error) {
-	//todo: create before context
+func (d *Database) synchInsert(query string, args ...interface{}) (err error) {
 	d.Mu.Lock()
 	defer d.Mu.Unlock()
 
-	d.db = getConn()
+	//d.db = Get()
 	defer d.db.Close()
 
 	_, err = d.db.Exec(query, args...)
@@ -29,12 +31,11 @@ func (d *Database) SynchInsert(query string, args ...interface{}) (err error) {
 	return
 }
 
-func (d *Database) SynchSelect(query string, args ...interface{}) (rows *sql.Rows, err error) {
-	//todo: create before context
+func (d *Database) synchSelect(query string, args ...interface{}) (rows *sql.Rows, err error) {
 	d.Mu.Lock()
 	defer d.Mu.Unlock()
 
-	d.db = getConn()
+	//d.db = Get()
 	defer d.db.Close()
 
 	rows, err = d.db.Query(query, args...)
@@ -45,11 +46,10 @@ func (d *Database) SynchSelect(query string, args ...interface{}) (rows *sql.Row
 	return rows, err
 }
 
-func getConn() *sql.DB {
+func Get(ctx *tools.AppContex) *sql.DB {
+	cnf := ctx.Context.Value("config").(config.Config)
 
-	//todo: context: config pathDb
-	path := "/home/worker/Studing/report-maker-server/src/database/"
-
+	path := cnf.Database_path
 	db, err := sql.Open("sqlite3", path+"main.db")
 	if err != nil {
 		log.Println("Open database error: ", err)

@@ -10,7 +10,7 @@ import (
 )
 
 func Worker(ctx *tools.AppContex) {
-	perfStruct := ctx.Context.Value("report").(tools.PerformanceAnalyzerStruct)
+	perfStruct := ctx.Context.Value("PerformanceAnalyzerStruct").(tools.PerformanceAnalyzerStruct)
 	perfChan := ctx.Context.Value("PerfomanceChan").(tools.PerfomanceChan)
 
 	in := perfStruct.Data
