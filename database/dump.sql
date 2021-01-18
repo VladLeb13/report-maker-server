@@ -1,12 +1,5 @@
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
-CREATE TABLE `test_table` (
-	`id`	INTEGER NOT NULL,
-	`name`	TEXT NOT NULL,
-	PRIMARY KEY(`id`)
-);
-INSERT INTO test_table VALUES(1,'First');
-INSERT INTO test_table VALUES(2,'Second');
 CREATE TABLE `Program_list` (
 	`ID`	TEXT NOT NULL UNIQUE,
 	`ProgramID`	TEXT NOT NULL,
@@ -101,7 +94,7 @@ CREATE TABLE `Hardware` (
 CREATE TABLE `Workstation` (
 	`ID`	TEXT NOT NULL UNIQUE,
 	`Name`	TEXT NOT NULL UNIQUE,
-	`Comment`	REAL,
+	`Comment`	TEXT,
 	`Allow_analysis`	INTEGER NOT NULL DEFAULT 0,
 	`HardwareID`	TEXT NOT NULL,
 	`Program_listID`	TEXT NOT NULL,
