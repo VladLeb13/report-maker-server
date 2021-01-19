@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/gin-gonic/gin"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
 )
@@ -14,6 +15,13 @@ var (
 	block2       = []byte("qwertyui-qwertyu")
 	s            = securecookie.New(block1, block2)
 )
+
+func BaseAuth2() gin.HandlerFunc {
+	return func(context *gin.Context) {
+
+	}
+
+}
 
 //BaseAuth - аутентификация (MiddleWare)
 func BaseAuth(h http.Handler) http.Handler {

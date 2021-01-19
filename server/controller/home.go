@@ -3,10 +3,11 @@ package controller
 import (
 	"fmt"
 	"html/template"
-	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
-func Home(w http.ResponseWriter, r *http.Request) {
+func Home(ctx *gin.Context) {
 	//TODO: context: config templates file
 	path := "/home/worker/Studing/report-maker-server/src/server/templates/"
 
@@ -14,7 +15,9 @@ func Home(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println("error parce template")
 	} else {
-		tmpl.Execute(w, nil)
+		tmpl.Execute(ctx.Writer, nil)
 	}
+
+	return
 
 }

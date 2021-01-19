@@ -6,11 +6,12 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 	"github.com/gorilla/sessions"
 )
 
-func Login(w http.ResponseWriter, r *http.Request) {
+func Login(ctx *gin.Context) {
 	//TODO: context: config templates file
 	path := "/home/worker/Studing/report-maker-server/src/server/templates/"
 
@@ -18,13 +19,15 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println("error parce template")
 	} else {
-		tmpl.Execute(w, nil)
+		tmpl.Execute(ctx.Writer, nil)
 	}
 
 }
 
 //Logining -Авторизация в системе
-func Logining(w http.ResponseWriter, r *http.Request) {
+func Logining(ctx *gin.Context) {
+	r := ctx.Request
+	w := ctx.Writer
 
 	rlogin := r.FormValue("login")
 	rpass := r.FormValue("pass")

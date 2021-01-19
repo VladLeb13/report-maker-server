@@ -1,34 +1,46 @@
 package server
 
 import (
+	"context"
 	"errors"
 	"log"
-	"net/http"
 
 	"report-maker-server/server/controller"
 	"report-maker-server/server/receiver"
+	"report-maker-server/tools"
 
-	"github.com/gorilla/mux"
+	"github.com/gin-gonic/gin"
 )
 
 func Serve() (err error) {
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
-
-	router := mux.NewRouter()
-
 	log.Println("Server start in localhost:8080 ....")
 
-	router.HandleFunc("/home", controller.Home)
-	router.HandleFunc("/reports", controller.Reports)
-	router.HandleFunc("/login", controller.Login)
+	router := gin.New()
 
-	router.HandleFunc("/logining", controller.Logining).Methods("POST")
-	router.HandleFunc("/upload", receiver.Upload).Methods("POST")
+	newctx := tools.AppContex{Context: context.Background()}
 
-	router.Use(controller.BaseAuth)
+	router.Use(appContext(&newctx))
 
-	http.ListenAndServe("localhost:8080", router)
+	authorized := router.Group("/")
+	authorized.Use(controller.BaseAuth2())
+	{
+		authorized.GET("/home", controller.Home)
+		authorized.GET("/reports", controller.Reports)
+		authorized.GET("/login", controller.Login)
+
+		authorized.POST("/logining", controller.Logining)
+		authorized.POST("/upload", receiver.Upload)
+
+	}
+
+	router.Run()
 
 	return errors.New("Server shutdown")
+}
 
+func appContext(app_context *tools.AppContex) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Set("app-context", app_context)
+	}
 }

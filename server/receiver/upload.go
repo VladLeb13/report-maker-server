@@ -10,9 +10,13 @@ import (
 	"report-maker-server/server/normalizer"
 
 	"github.com/VladLeb13/report-maker-lib/datalib"
+	"github.com/gin-gonic/gin"
 )
 
-func Upload(w http.ResponseWriter, r *http.Request) {
+func Upload(ctx *gin.Context) {
+	w := ctx.Writer
+	r := ctx.Request
+
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 
 	login, pass, ok := r.BasicAuth()
