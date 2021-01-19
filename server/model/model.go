@@ -2,25 +2,25 @@ package model
 
 type (
 	Workstation struct {
-		ID                string `json:"ID"`
-		Name              string `json:"Name"`
-		Comment           string `json:"Comment"`
-		Allow_analysis    int    `json:"Allow_analysis"`
-		HardwareID        string `json:"HardwareID"`
-		Program_listID    string `json:"Program_listID"`
-		PerfomanceID      string `json:"PerfomanceID"`
-		Fault_toleranceID string `json:"Fault_toleranceID"`
-	}
-	Hardware struct {
-		ID            string `json:"ID"`
-		CPU_listID    string `json:"CPU_listID"`
-		MatherboardID string `json:"MatherboardID"`
-		RAM_listID    string `json:"RAM_listID"`
-		HDD_listID    string `json:"HDD_listID"`
+		ID              string          `json:"ID"`
+		Name            string          `json:"Name"`
+		Comment         string          `json:"Comment"`
+		Allow_analysis  int             `json:"Allow_analysis"`
+		Hardware        Hardware        `json:"Hardware"`
+		Program_list    Program_list    `json:"Program_list"`
+		Perfomance      Perfomance      `json:"Perfomance"`
+		Fault_tolerance Fault_tolerance `json:"Fault_tolerance"`
 	}
 	Program_list struct {
-		ID        string   `json:"ID"`
-		ProgramID []string `json:"ProgramID"`
+		ID       string    `json:"ID"`
+		Programs []Program `json:"Programs"`
+	}
+	Program struct {
+		ID           string `json:"ID"`
+		Manufacturer string `json:"Manufacturer"`
+		Name         string `json:"Name"`
+		Version      string `json:"Version"`
+		Install_on   string `json:"Install_on"`
 	}
 
 	Perfomance struct {
@@ -40,25 +40,26 @@ type (
 	}
 )
 
-type Program struct {
-	ID           string `json:"ID"`
-	Manufacturer string `json:"Manufacturer"`
-	Name         string `json:"Name"`
-	Version      string `json:"Version"`
-	Install_on   string `json:"Install_on"`
-}
-
 //Hardware
 type (
+	Hardware struct {
+		ID          string      `json:"ID"`
+		Matherboard Matherboard `json:"Matherboard"`
+		CPU_list    CPU_list    `json:"CPU_list"`
+		RAM_list    RAM_list    `json:"RAM_list"`
+		HDD_list    HDD_list    `json:"HDD_list"`
+	}
+
 	Matherboard struct {
 		ID      string `json:"ID"`
 		Name    string `json:"Name"`
 		Model   string `json:"Model"`
 		Product string `json:"Product"`
 	}
+
 	CPU_list struct {
-		ID    string   `json:"ID"`
-		CPUID []string `json:"CPUID"`
+		ID   string `json:"ID"`
+		CPUs []CPU  `json:"CPUs"`
 	}
 	CPU struct {
 		ID             string `json:"ID"`
@@ -68,9 +69,10 @@ type (
 		Number_cores   int    `json:"Number_cores"`
 		Number_threads int    `json:"Number_threads"`
 	}
+
 	RAM_list struct {
-		ID    string   `json:"ID"`
-		RAMID []string `json:"RAMID"`
+		ID   string `json:"ID"`
+		RAMs []RAM  `json:"RAMs"`
 	}
 	RAM struct {
 		ID            string `json:"ID"`
@@ -79,9 +81,10 @@ type (
 		Frequency     int    `json:"Frequency"`
 		Serial_number string `json:"Serial_number"`
 	}
+
 	HDD_list struct {
-		ID    string   `json:"ID"`
-		HDDID []string `json:"HDDID"`
+		ID   string `json:"ID"`
+		HDDs []HDD  `json:"HDDs"`
 	}
 	HDD struct {
 		ID    string `json:"ID"`
@@ -93,49 +96,30 @@ type (
 
 type (
 	Monitoring struct {
-		ID       string `json:"ID"`
-		Date     string `json:"Date"`
-		ResultID string `json:"ResultID"`
+		ID     string            `json:"ID"`
+		Date   string            `json:"Date"`
+		Result Monitoring_result `json:"Result"`
 	}
+
 	Monitoring_result struct {
-		ID                         string `json:"ID"`
-		Upgrade_workstation_listID string `json:"Upgrade_workstation_listID"`
+		ID                       string                   `json:"ID"`
+		Upgrade_workstation_list Upgrade_workstation_list `json:"Upgrade_workstation_list"`
 	}
+
+	Upgrade_workstation_list struct {
+		ID                 string              `json:"ID"`
+		Date               string              `json:"Date"`
+		Upgrade_list_items []Upgrade_list_item `json:"Upgrade_list_items"`
+	}
+
 	Upgrade_list_item struct {
 		ID            string `json:"ID"`
 		WorkstationID string `json:"WorkstationID"`
 		Description   string `json:"Description"`
 	}
-	Upgrade_workstation_list struct {
-		ID                  string `json:"ID"`
-		Date                string `json:"Date"`
-		Upgrade_list_itemID string `json:"Upgrade_list_itemID"`
-	}
 )
 
 type TO_WR struct {
-	Workstation     Workstation
-	Hardware        Hardware
-	Program_list    Program_list
-	Perfomance      Perfomance
-	Fault_tolerance Fault_tolerance
-
-	Programs []Program
-
-	Matherboard Matherboard
-
-	CPU_list CPU_list
-	CPUs     []CPU
-
-	RAM_list RAM_list
-	RAMs     []RAM
-
-	HDD_list HDD_list
-	HDDs     []HDD
-
-	Monitoring_result Monitoring_result
-	Monitoring        Monitoring
-
-	Upgrade_list_item        Upgrade_list_item
-	Upgrade_workstation_list Upgrade_workstation_list
+	Workstation Workstation
+	Monitoring  Monitoring
 }

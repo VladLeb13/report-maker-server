@@ -4,101 +4,75 @@
     "Name": "PC495",
     "Comment": "Рабочая станция бухгалтерии",
     "Allow_analysis": "1",
-    "HardwareID": "1fb8ddc7-bd0f-4f64-9824-285f317a6714",
-    "Program_listID": "640d88e8-5968-41a0-a841-91c1f7b75629",
-    "PerfomanceID": "dbf2890c-09a1-4d06-993b-2f2d0d62f92d",
-    "Fault_toleranceID": "2e7051d5-37c2-42f3-ba73-364abacaa4e7"
-  },
-  "Hardware" : {
-    "ID": "1fb8ddc7-bd0f-4f64-9824-285f317a6714",
-    "CPU_listID": "64a2b7fb-d5c0-4321-b66f-d0d38f085516",
-    "MatherboardID": "34028ab2-ef76-466d-b9a4-dc6dd4d6fe52",
-    "RAM_listID": "6b5387ee-363e-4b62-89f5-e231e76d15bd",
-    "HDD_listID": "bf4fa551-e365-4fec-b883-902659a714e6"
-  },
-  "Matherboard": {
-    "ID": "34028ab2-ef76-466d-b9a4-dc6dd4d6fe52",
-    "Name": "K53",
-    "Model": "SD",
-    "Product": "Noutbok"
-  },
-
-  "CPU_list": {
-    "ID" : "64a2b7fb-d5c0-4321-b66f-d0d38f085516",
-    "CPUID": "b7d44d65-d96e-4247-9725-cf41a9ebd3d5"
-  },
-  "CPU": {
-    "ID" : "b7d44d65-d96e-4247-9725-cf41a9ebd3d5",
-    "Model": "Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz",
-    "Manufacturer":"GenuineIntel",
-    "Frequency":"2401",
-    "Number_cores":"2",
-    "Number_threads":"2"
-  },
-  "RAM_list": {
-    "ID" : "6b5387ee-363e-4b62-89f5-e231e76d15bd",
-    "RAMID": "1cac432e-80f4-4f09-a4e8-ccd42fc44283"
-  },
-  "RAM": {
-    "ID": "1cac432e-80f4-4f09-a4e8-ccd42fc44283",
-    "Manufacturer": "Elpida",
-    "Size": "4",
-    "Frequency": "1333",
-    "Serial_number": "EBJ41UF8BCS0-DJ-F"
-  },
-  "HDD_list": {
-    "ID" : "bf4fa551-e365-4fec-b883-902659a714e6",
-    "HDDID": "49d8614f-8ebc-4127-999b-13c989017af8"
-  },
-  "HDD": {
-    "ID" : "49d8614f-8ebc-4127-999b-13c989017af8",
-    "Model": "Samsung SSD 860 EVO 500GB",
-    "Size": "500105",
-    "Type": "2"
-  },
-  "Program_list":{
-    "ID": "640d88e8-5968-41a0-a841-91c1f7b75629",
-    "ProgramID":"f1f41f1c-b70f-4b50-ba7f-94e9d1174aec"
-  },
-  "Program": {
-    "ID" : "f1f41f1c-b70f-4b50-ba7f-94e9d1174aec",
-    "Manufacturer": "Yarn Contributors",
-    "Name": "Yarn",
-    "Version": "1.16.0",
-    "Install_on": "2019-05-22T00:00:00Z"
-  },
-  "Perfomance": {
-    "ID": "dbf2890c-09a1-4d06-993b-2f2d0d62f92d",
-    "CPU":"35",
-    "RAM":"29",
-    "HDD":"20",
-    "Cluster":"3"
-  },
-  "Fault_tolerance": {
-    "ID": "2e7051d5-37c2-42f3-ba73-364abacaa4e7",
-    "Commissioning_date":"2015-05-22T00:00:00Z",
-    "Backup": "1",
-    "Number_of_error":"10",
-    "Cluster": "0"
+    "Hardware": {
+      "ID": "1fb8ddc7-bd0f-4f64-9824-285f317a6714",
+      "MatherboardID": {
+        "ID": "34028ab2-ef76-466d-b9a4-dc6dd4d6fe52",
+        "Name": "K53",
+        "Model": "SD",
+        "Product": "Noutbok"
+      },
+      "CPU_list": {
+        "ID" : "64a2b7fb-d5c0-4321-b66f-d0d38f085516",
+        "CPUs": [
+          {"ID" : "b7d44d65-d96e-4247-9725-cf41a9ebd3d5","Model": "Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz",
+            "Manufacturer":"GenuineIntel", "Frequency":"2401", "Number_cores":"2", "Number_threads":"2"}
+        ]
+      },
+      "RAM_list": {
+        "ID" : "6b5387ee-363e-4b62-89f5-e231e76d15bd",
+        "RAMs": [
+          { "ID": "1cac432e-80f4-4f09-a4e8-ccd42fc44283", "Manufacturer": "Elpida","Size": "4",
+            "Frequency": "1333","Serial_number": "EBJ41UF8BCS0-DJ-F"},
+        ]
+      },
+      "HDD_list":{
+        "ID" : "bf4fa551-e365-4fec-b883-902659a714e6",
+        "HDDs": [
+          {"ID" : "49d8614f-8ebc-4127-999b-13c989017af8", "Model": "Samsung SSD 860 EVO 500GB", "Size": "500105",
+            "Type": "2"}
+        ]
+      }
+    },
+    "Program_list": {
+      "ID": "640d88e8-5968-41a0-a841-91c1f7b75629",
+      "Programs":[
+        {"ID" : "f1f41f1c-b70f-4b50-ba7f-94e9d1174aec", "Manufacturer": "Yarn Contributors", "Name": "Yarn",
+          "Version": "1.16.0", "Install_on": "2019-05-22T00:00:00Z"}
+      ]
+    },
+    "Perfomance": {
+      "ID": "dbf2890c-09a1-4d06-993b-2f2d0d62f92d",
+      "CPU":"35",
+      "RAM":"29",
+      "HDD":"20",
+      "Cluster":"3"
+    },
+    "Fault_tolerance": {
+      "ID": "2e7051d5-37c2-42f3-ba73-364abacaa4e7",
+      "Commissioning_date":"2015-05-22T00:00:00Z",
+      "Backup": "1",
+      "Number_of_error":"10",
+      "Cluster": "0"
+    }
   },
 
   "Monitoring": {
     "ID" : "d137cea5-9270-4865-9282-e2f3726755c8",
     "Date": "2020-05-22T00:00:00Z",
-    "ResultID" :"d51df1e2-2ac7-4f3c-822c-c84ff5f1da15"
-  },
-  "Monitoring_result": {
-    "ID": "d51df1e2-2ac7-4f3c-822c-c84ff5f1da15",
-    "Upgrade_workstation_listID": "e85230b2-5101-4eb1-b821-3275150955d0"
-  },
-  "Upgrade_workstation_list": {
-    "ID" :"e85230b2-5101-4eb1-b821-3275150955d0",
-    "Date": "2020-06-22T00:00:00Z",
-    "Upgrade_list_itemID":"5f1c0fd9-3177-4652-9270-d7519137a60a"
-  },
-  "Upgrade_list_item": {
-  "ID": "5f1c0fd9-3177-4652-9270-d7519137a60a",
-  "WorkstationID":"6f15fc1d-8493-4aa3-a4f7-baf74d06091f",
-  "Description": "Описание списка"
+    "Result" :{
+      "ID": "d51df1e2-2ac7-4f3c-822c-c84ff5f1da15",
+      "Upgrade_workstation_list": {
+        "ID" :"e85230b2-5101-4eb1-b821-3275150955d0",
+        "Date": "2020-06-22T00:00:00Z",
+        "Upgrade_list_items":[
+          {
+            "ID": "5f1c0fd9-3177-4652-9270-d7519137a60a",
+            "WorkstationID":"6f15fc1d-8493-4aa3-a4f7-baf74d06091f",
+            "Description": "Описание списка"
+          }
+        ]
+      }
+    }
   }
 }
