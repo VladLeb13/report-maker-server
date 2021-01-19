@@ -9,7 +9,7 @@ import (
 
 func Reports(ctx *gin.Context) {
 	//TODO: context: config templates file
-	path := "/home/worker/Studing/report-maker-server/src/server/templates/"
+	path := "/home/lebedev/Документы/srv/src/report-maker-server/server/templates/"
 
 	tmpl, err := template.ParseFiles(path + "reports.html")
 	if err != nil {

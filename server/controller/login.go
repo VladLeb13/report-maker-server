@@ -13,7 +13,7 @@ import (
 
 func Login(ctx *gin.Context) {
 	//TODO: context: config templates file
-	path := "/home/worker/Studing/report-maker-server/src/server/templates/"
+	path := "/home/lebedev/Документы/srv/src/report-maker-server/server/templates/"
 
 	tmpl, err := template.ParseFiles(path + "login.html")
 	if err != nil {
@@ -50,7 +50,7 @@ func Logining(ctx *gin.Context) {
 		session.ID = uuid.New().String()
 		session.Options = &sessions.Options{
 			//todo: set normal max ege
-			MaxAge: 120,
+			MaxAge: 10,
 		}
 		var message string = "flash-message"
 		session.AddFlash(&message)

@@ -1,12 +1,11 @@
 package controller
 
 import (
-	"log"
-	"net/http"
-
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
+	"log"
+	"net/http"
 )
 
 var (
@@ -28,7 +27,7 @@ func BaseAuth() gin.HandlerFunc {
 		if cookie == nil {
 			//log.Println("NO auth")
 			if r.RequestURI == "/login" || r.RequestURI == "/logining" || r.RequestURI == "/upload" {
-				h.ServeHTTP(w, r)
+				return
 			} else {
 				http.Redirect(w, r, "/login", http.StatusPermanentRedirect)
 			}
