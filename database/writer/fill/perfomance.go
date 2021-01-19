@@ -9,21 +9,21 @@ import (
 	"github.com/google/uuid"
 )
 
-func Perfomance(in datalib.Perfomance) (perfomance model.Perfomance) {
-	if len(in.HDD) != 0 {
-		perfomance.HDD = strconv.Itoa(int(in.HDD[0].PercentDiskTime))
+func Perfomance(report datalib.Report) (perf model.Perfomance) {
+	if len(report.Perfomance.HDD) != 0 {
+		perf.HDD = strconv.Itoa(int(report.Perfomance.HDD[0].PercentDiskTime))
 	}
 
-	if len(in.RAM) != 0 {
-		perfomance.RAM = strconv.Itoa(int(in.RAM[0].AvailableMBytes))
+	if len(report.Perfomance.RAM) != 0 {
+		perf.RAM = strconv.Itoa(int(report.Perfomance.RAM[0].AvailableMBytes))
 	}
 
-	if len(in.CPU) != 0 {
-		perfomance.CPU = strconv.Itoa(int(in.CPU[0].PercentProcessorUtility))
+	if len(report.Perfomance.CPU) != 0 {
+		perf.CPU = strconv.Itoa(int(report.Perfomance.CPU[0].PercentProcessorUtility))
 	}
 
-	perfomance.Cluster = 0
-	perfomance.ID = uuid.New().String()
+	perf.Cluster = 0
+	perf.ID = uuid.New().String()
 
 	return
 }

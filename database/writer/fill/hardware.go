@@ -7,83 +7,76 @@ import (
 	"github.com/google/uuid"
 )
 
-func CPU(in datalib.Report, cpu_list_id string) (cpu_list []model.CPU, cpu model.CPU_list) {
-	for _, v := range in.Hardware.CPUs {
+func Hardware(report datalib.Report) (hardware model.Hardware) {
+	hardware.CPU_list = cpu(report)
+	hardware.RAM_list = ram(report)
+	hardware.HDD_list = hdd(report)
+	hardware.Matherboard = board(report)
+
+	return
+}
+
+func cpu(report datalib.Report) (list model.CPU_list) {
+	list.ID = uuid.New().String()
+
+	for _, v := range report.Hardware.CPUs {
 		var cpu model.CPU
 
+		cpu.ID = uuid.New().String()
 		cpu.Manufacturer = v.Manufacturer
 		cpu.Model = v.Name
 		cpu.Frequency = int(v.MaxClockSpeed)
 		cpu.Number_cores = int(v.NumberOfCores)
 		cpu.Number_threads = int(v.ThreadCount)
 
-		cpu_list = append(cpu_list, cpu)
-	}
-
-	cpu.ID = cpu_list_id
-
-	for _, v := range cpu_list {
-		id := uuid.New().String()
-		cpu.CPUID = append(cpu.CPUID, id)
-		v.ID = id
+		list.CPUs = append(list.CPUs, cpu)
 	}
 
 	return
 }
 
-func RAM(in datalib.Report, ram_list_id string) (ram_list []model.RAM, ram model.RAM_list) {
-	for _, v := range in.Hardware.RAMs {
+func ram(report datalib.Report) (list model.RAM_list) {
+	list.ID = uuid.New().String()
+
+	for _, v := range report.Hardware.RAMs {
 		var ram model.RAM
 
+		ram.ID = uuid.New().String()
 		ram.Manufacturer = v.Manufacturer
 		ram.Frequency = int(v.Speed)
 		ram.Serial_number = v.PartNumber
 		ram.Size = int(v.Capacity)
 
-		ram_list = append(ram_list, ram)
-	}
-
-	ram.ID = ram_list_id
-
-	for _, v := range ram_list {
-		id := uuid.New().String()
-		ram.RAMID = append(ram.RAMID, id)
-		v.ID = id
+		list.RAMs = append(list.RAMs, ram)
 	}
 
 	return
 }
 
-func HDD(in datalib.Report, hdd_list_id string) (hdd_list []model.HDD, hdd model.HDD_list) {
+func hdd(in datalib.Report) (list model.HDD_list) {
+	list.ID = uuid.New().String()
+
 	for _, v := range in.Hardware.HDDs {
 		var hdd model.HDD
 
+		hdd.ID = uuid.New().String()
 		hdd.Size = int(v.Size)
 		hdd.Model = v.Model
 
 		//TODO: match type in name of hdd if name contains SSD then type = 2
 		hdd.Type = 1
 
-		hdd_list = append(hdd_list, hdd)
-	}
-
-	hdd.ID = hdd_list_id
-	for _, v := range hdd_list {
-		id := uuid.New().String()
-
-		hdd.HDDID = append(hdd.HDDID, id)
-		v.ID = id
-
+		list.HDDs = append(list.HDDs, hdd)
 	}
 
 	return
 }
 
-func Board(hardware datalib.Hardware) (board model.Matherboard) {
+func board(report datalib.Report) (board model.Matherboard) {
 	board.ID = uuid.New().String()
-	board.Name = hardware.Board.Manufacturer
-	board.Product = hardware.Board.Product
-	board.Model = hardware.Board.Version
+	board.Name = report.Hardware.Board.Manufacturer
+	board.Product = report.Hardware.Board.Product
+	board.Model = report.Hardware.Board.Version
 
 	return
 }
