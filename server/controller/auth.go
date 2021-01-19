@@ -16,16 +16,12 @@ var (
 	s            = securecookie.New(block1, block2)
 )
 
-func BaseAuth2() gin.HandlerFunc {
-	return func(context *gin.Context) {
-
-	}
-
-}
-
 //BaseAuth - аутентификация (MiddleWare)
-func BaseAuth(h http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+func BaseAuth() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		w := ctx.Writer
+		r := ctx.Request
+
 		log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 		cookie, _ := r.Cookie("auth-session")
 
@@ -67,10 +63,6 @@ func BaseAuth(h http.Handler) http.Handler {
 
 			}
 
-			h.ServeHTTP(w, r)
-
-			log.Println(r.URL)
 		}
-
-	})
+	}
 }

@@ -23,7 +23,7 @@ func Serve() (err error) {
 	router.Use(appContext(&newctx))
 
 	authorized := router.Group("/")
-	authorized.Use(controller.BaseAuth2())
+	authorized.Use(controller.BaseAuth())
 	{
 		authorized.GET("/home", controller.Home)
 		authorized.GET("/reports", controller.Reports)
@@ -34,7 +34,7 @@ func Serve() (err error) {
 
 	}
 
-	router.Run()
+	router.Run(":8080")
 
 	return errors.New("Server shutdown")
 }
