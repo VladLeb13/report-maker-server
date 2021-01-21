@@ -1,6 +1,6 @@
 {
   "database_path": "/home/worker/Studing/report-maker-server/src/database/",
-  "template_path": "/home",
+  "template_path": "/home/lebedev/Документы/srv/src/report-maker-server/server/templates/",
   "time_format": "RFC822",
-  "scheduler_cycle": "4"
+  "scheduler_cycle": 4
 }

@@ -1,8 +1,6 @@
 package writer
 
 import (
-	"log"
-
 	"report-maker-server/database/writer/fill"
 	"report-maker-server/server/model"
 

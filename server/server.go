@@ -1,12 +1,11 @@
 package server
 
 import (
-	"context"
 	"errors"
 	"log"
-	"report-maker-server/server/receiver"
 
 	"report-maker-server/server/controller"
+	"report-maker-server/server/receiver"
 	"report-maker-server/tools"
 
 	"github.com/gin-contrib/sessions"
@@ -14,15 +13,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Serve() (err error) {
+func Serve(ctx *tools.AppContex) (err error) {
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 	log.Println("Server start in localhost:8080 ....")
 
 	router := gin.Default()
 
-	newctx := tools.AppContex{Context: context.Background()}
-
-	router.Use(appContext(&newctx))
+	router.Use(appContext(ctx))
 	router.Use(gin.Logger())
 
 	store := cookie.NewStore([]byte("secret"))

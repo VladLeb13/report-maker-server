@@ -59,7 +59,7 @@ func main() {
 
 	go scheduler.Start(&ctx)
 
-	err = server.Serve()
+	err = server.Serve(&ctx)
 	if err != nil {
 		log.Println(err)
 	}
