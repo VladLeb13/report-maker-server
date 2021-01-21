@@ -9,6 +9,8 @@ import (
 	"report-maker-server/server/controller"
 	"report-maker-server/tools"
 
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
 )
 
@@ -23,7 +25,10 @@ func Serve() (err error) {
 	router.Use(appContext(&newctx))
 	router.Use(gin.Logger())
 
+	store := cookie.NewStore([]byte("secret"))
+
 	authorized := router.Group("/")
+	authorized.Use(sessions.Sessions("auth-session", store))
 	authorized.Use(controller.BaseAuth())
 	{
 		authorized.GET("/home", controller.Home)

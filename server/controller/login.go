@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/gorilla/sessions"
 )
 
 func Login(ctx *gin.Context) {
@@ -26,6 +26,8 @@ func Login(ctx *gin.Context) {
 
 //Logining -Авторизация в системе
 func Logining(ctx *gin.Context) {
+	session := sessions.Default(ctx)
+
 	r := ctx.Request
 	w := ctx.Writer
 
@@ -40,43 +42,23 @@ func Logining(ctx *gin.Context) {
 	}
 
 	if authResult {
-		//TODO: context: cookeis name
-		session, err := sessionStore.Get(r, "auth-session")
+		session.Options(struct {
+			Path     string
+			Domain   string
+			MaxAge   int
+			Secure   bool
+			HttpOnly bool
+			SameSite http.SameSite
+		}{Path: "/", Domain: "", MaxAge: 380, Secure: false, HttpOnly: false, SameSite: 0})
+		session.Set("auth-session", uuid.New().String())
+		err := session.Save()
 		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-			return
+			log.Println("Error session save", err)
 		}
-		session.Values["uname"] = &rlogin
-		session.ID = uuid.New().String()
-		session.Options = &sessions.Options{
-			//todo: set normal max ege
-			MaxAge: 10,
-		}
-		var message string = "flash-message"
-		session.AddFlash(&message)
-
-		err = session.Save(r, w)
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-			return
-		}
-
-		value := map[string]string{}
-		value["secure"] = "cooookiess"
-		if encoded, err := s.Encode("cookies", &value); err == nil {
-			httpCookie := &http.Cookie{
-				Name:  "cookies",
-				Value: encoded,
-				Path:  "/",
-			}
-			http.SetCookie(w, httpCookie)
-
-		}
-
-		http.Redirect(w, r, "/home", http.StatusPermanentRedirect)
+		ctx.Redirect(http.StatusFound, "/home")
 
 	} else {
-		http.Redirect(w, r, "/login", http.StatusPermanentRedirect)
+		ctx.Redirect(http.StatusFound, "/login")
 	}
 
 }
@@ -90,26 +72,6 @@ func FindInBase(rlogin string, rpass string) (authResult bool, err error) {
 	if rlogin == "client" && rpass == "clientpass" {
 		authResult = true
 	}
-
 	return
-	//var db *sql.DB
-	//db = data.GetSqlite()
-	//defer db.Close()
-	//
-	//result := db.QueryRow("select login,password from users where login = $1", rlogin)
-	//var login, pass string
-	//err = result.Scan(&login, &pass)
-	//if err != nil {
-	//	return
-	//}
-	//
-	//if pass != "" {
-	//	bytePass := []byte(pass)
-	//	err = bcrypt.CompareHashAndPassword(bytePass, []byte(rpass))
-	//	if err != nil {
-	//		return
-	//	}
-	//	authResult = true
-	//}
 
 }
