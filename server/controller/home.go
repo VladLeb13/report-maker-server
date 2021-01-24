@@ -17,17 +17,14 @@ type content struct {
 func Home(ctx *gin.Context) {
 	app_ctx := ctx.MustGet("app-context").(*tools.AppContex)
 	cnf := app_ctx.Context.Value("config").(config.Config)
-	message := app_ctx.Context.Value("test-test").(string)
+
 	path := cnf.Template_path
 
-	data := content{
-		Message: message,
-	}
 	tmpl, err := template.ParseFiles(path + "home.html")
 	if err != nil {
 		fmt.Println("error parce template")
 	} else {
-		tmpl.Execute(ctx.Writer, data)
+		tmpl.Execute(ctx.Writer, nil)
 	}
 
 	return

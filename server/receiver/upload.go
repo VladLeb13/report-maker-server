@@ -5,20 +5,23 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"report-maker-server/database/writer"
 
+	"report-maker-server/database/writer"
 	"report-maker-server/server/controller"
 	"report-maker-server/server/normalizer"
+	"report-maker-server/tools"
 
 	"github.com/VladLeb13/report-maker-lib/datalib"
 	"github.com/gin-gonic/gin"
 )
 
 func Upload(ctx *gin.Context) {
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+
+	app_ctx := ctx.MustGet("app-context").(*tools.AppContex)
+
 	w := ctx.Writer
 	r := ctx.Request
-
-	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 
 	login, pass, ok := r.BasicAuth()
 	if !ok {
@@ -51,6 +54,6 @@ func Upload(ctx *gin.Context) {
 
 	normalizer.Actions(datalib)
 
-	writer.AddRecord(datalib)
+	writer.AddRecord(app_ctx, datalib)
 
 }

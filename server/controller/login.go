@@ -6,14 +6,19 @@ import (
 	"log"
 	"net/http"
 
+	"report-maker-server/config"
+	"report-maker-server/tools"
+
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 )
 
 func Login(ctx *gin.Context) {
-	//TODO: context: config templates file
-	path := "/home/lebedev/Документы/srv/src/report-maker-server/server/templates/"
+	app_ctx := ctx.MustGet("app-context").(*tools.AppContex)
+	cnf := app_ctx.Context.Value("config").(config.Config)
+
+	path := cnf.Template_path
 
 	tmpl, err := template.ParseFiles(path + "login.html")
 	if err != nil {

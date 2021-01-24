@@ -1,25 +1,28 @@
 package writer
 
 import (
+	"database/sql"
+
 	"report-maker-server/database/writer/fill"
 	"report-maker-server/server/model"
+	"report-maker-server/tools"
 
 	"github.com/VladLeb13/report-maker-lib/datalib"
 )
 
-func AddRecord(data interface{}) {
+func AddRecord(ctx *tools.AppContex, data interface{}) {
 	switch data.(type) {
 	case *datalib.Report:
-		fromRreiver(data.(*datalib.Report))
+		fromRreiver(ctx, data.(*datalib.Report))
 	case model.TO_WR:
-		fromApp(data.(model.TO_WR))
+		fromApp(ctx, data.(model.TO_WR))
 	}
 }
 
-func fromRreiver(report *datalib.Report) {
+func fromRreiver(ctx *tools.AppContex, report *datalib.Report) {
 	data := datalibToModel(*report)
 
-	fromApp(data)
+	fromApp(ctx, data)
 }
 
 func datalibToModel(report datalib.Report) (data model.TO_WR) {
@@ -35,6 +38,8 @@ func datalibToModel(report datalib.Report) (data model.TO_WR) {
 	return
 }
 
-func fromApp(data model.TO_WR) {
-	//TODO: write to db report
+func fromApp(ctx *tools.AppContex, data model.TO_WR) {
+	db := ctx.Context.Value("database").(*sql.DB)
+
+	db.Exec(`select *`)
 }

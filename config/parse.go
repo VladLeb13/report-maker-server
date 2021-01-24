@@ -14,10 +14,8 @@ type Config struct {
 }
 
 func Parse() (config Config, err error) {
-	//TODO: Раскоментить при завершении тестирования
-	//configfile, err := os.Open("config/config.json")
+	configfile, err := os.Open("config/config.json")
 
-	configfile, err := os.Open("/home/lebedev/Документы/srv/src/report-maker-server/config/config.json")
 	if err != nil {
 		return Config{}, err
 	}
