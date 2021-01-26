@@ -15,7 +15,6 @@ import (
 )
 
 func main() {
-	//TODO: make serve
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 
 	ctx := tools.AppContex{

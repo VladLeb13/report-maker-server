@@ -10,61 +10,122 @@ import (
 	"report-maker-server/tools"
 )
 
-const get_DataForAnalysis = `
-`
+const (
+	get_Data_For_Analysis = ` 	SELECT    HardwareID as hard_id
+ 										, PerfomanceID as perf_id
+ 										, Fault_toleranceID as flt_id 				
+								FROM Workstation
+								WHERE Allow_analysis = 1`
 
-func Start(ctx *tools.AppContex) {
-	cnf := ctx.Context.Value("config").(config.Config)
-	db := ctx.Context.Value("database").(*sql.DB)
+	get_Data_For_Perfomance = ` 	SELECT  RAM.Size AS ram_size
+								, RAM.Frequency AS ram_freq
+								, CPU.Frequency AS cpu_freq
+								, CPU.Number_cores AS cpu_cores
+								, CPU.Number_threads AS cpu_thread
+								, HDD.Type AS disk_type
+								FROM Hardware
+									INNER JOIN Hardware ON CPU_list.ID = Hardware.CPU_listID
+									INNER JOIN CPU ON CPU.ID = CPU_list.CPUID
+									INNER JOIN Hardware ON Hardware.ID = Hardware.RAM_listID
+									INNER JOIN CPU ON RAM.ID = RAM_list.RAMID
+									INNER JOIN Hardware ON Hardware.ID = Hardware.HDD_listID
+									INNER JOIN CPU ON HDD.ID = HDD_list.HDDID
+								WHERE Hardware.ID = $1`
 
-	//timeout:=cnf.Scheduler_cycle
-	//for { //общий цикл для воркера
-	//time.Sleep(time.Duration(timeout) * time.Minute)
-	//TODO: Запрос на выбор всех uuid из таблицы Workstation
-	//for rows in uuid из Workstation {
-	//time.Sleep(time.Duration(timeout) * time.Minute)
-	var (
-		ram_size   int
+	get_Data_For_FLT = ` 	SELECT Fault_tolerance.Commissioning_date AS commission_date 
+ 								, Fault_tolerance.Backup AS backup
+								, Fault_tolerance.Number_of_error AS error_count 
+								, Perfomance.Cluster AS perf_cluster
+						FROM Fault_tolerance
+							INNER JOIN Perfomance ON Perfomance.ID = $1
+						WHERE Fault_tolerance.ID = $2`
+)
+
+type (
+	data_For_Analysis struct {
+		hard_id string
+		perf_id string
+		flt_id  string
+	}
+
+	data_For_Perfomance_Analysis struct {
+		ram_sie    int
 		ram_freq   int
 		cpu_freq   int
 		cpu_cores  int
 		cpu_thread int
 		disk_type  int
-	)
-
-	//TODO: Запрос на выбор параметров по uuid для  PerfomanceAnalysis
-	//select
-	if err := PerfomanceAnalysis(ctx, ram_size, ram_freq, cpu_freq, cpu_cores, cpu_thread, disk_type); err != nil {
-		log.Println(err)
+		id         string
 	}
 
-	var (
+	data_For_FLT_Analysis struct {
 		commission_date string
 		backup          int
 		error_count     int
 		perf_cluster    int
-	)
-
-	//TODO: Запрос на выбор параметров по uuid для  FaultTolerantAnalysis
-	//select
-
-	if err := FaultTolerantAnalysis(ctx, commission_date, backup, error_count, perf_cluster); err != nil {
-		log.Println(err)
+		id              string
 	}
+)
 
-	//}
-	//}
+func Start(ctx *tools.AppContex) {
+	cnf := ctx.Context.Value("config").(config.Config)
+	db := ctx.Context.Value("database").(*sql.DB)
+
+	timeout := cnf.Scheduler_cycle
+	for { //общий цикл для воркера
+		time.Sleep(time.Duration(timeout) * time.Minute)
+
+		rows, err := db.Query(get_Data_For_Analysis)
+		if err != nil {
+			log.Println("Error in query get_Data_For_Analysis ", err)
+		}
+
+		var resp []data_For_Analysis
+		for rows.Next() {
+			var v data_For_Analysis
+			rows.Scan(&v)
+
+			resp = append(resp, v)
+		}
+		rows.Close()
+
+		for _, v := range resp {
+
+			var perfomanceParam data_For_Perfomance_Analysis
+			err = db.QueryRow(get_Data_For_Perfomance, v.hard_id).Scan(&perfomanceParam)
+			if err != nil {
+				log.Println("Error in scan values get_DataForPerfomance ", err)
+			}
+			perfomanceParam.id = v.perf_id
+			if err := PerfomanceAnalysis(ctx, perfomanceParam); err != nil {
+				log.Println(err)
+			}
+
+			var fltParam data_For_FLT_Analysis
+			err = db.QueryRow(get_Data_For_FLT, v.perf_id, v.flt_id).Scan(&fltParam)
+			if err != nil {
+				log.Println("Error in scan values get_DataForFLT ", err)
+			}
+			fltParam.id = v.flt_id
+			if err := FaultTolerantAnalysis(ctx, fltParam); err != nil {
+				log.Println(err)
+			}
+
+		}
+
+	}
 
 }
 
-const set_Perfomance_Analisis_Result = `
-`
+const set_Perfomance_Analisis_Result = `UPDATE Perfomance
+									    SET Cluster = $1
+									    WHERE ID = $2`
 
-func PerfomanceAnalysis(ctx *tools.AppContex, ram_sie int, ram_freq int, cpu_freq int, cpu_cores int, cpu_thread int, disk_type int) (err error) {
+func PerfomanceAnalysis(ctx *tools.AppContex, d data_For_Perfomance_Analysis) (err error) {
 	db := ctx.Context.Value("database").(*sql.DB)
 	perfChan := ctx.Context.Value("PerfomanceChan").(tools.PerfomanceChan)
 
-	params := tools.PerformanceParameters{}.Set(ram_sie, ram_freq, cpu_freq, cpu_cores, cpu_thread, disk_type)
+	params := tools.PerformanceParameters{}.Set(d.ram_sie, d.ram_freq, d.cpu_freq, d.cpu_cores, d.cpu_thread, d.disk_type)
 
 	data := tools.DataForPerformanceAnalyze{}
 	data.Set(params)
@@ -88,8 +149,7 @@ func PerfomanceAnalysis(ctx *tools.AppContex, ram_sie int, ram_freq int, cpu_fre
 		}
 	}
 
-	//TODO: Запрос на запись значения анализа производительности
-	_, err = db.Exec(set_Perfomance_Analisis_Result, cluster)
+	_, err = db.Exec(set_Perfomance_Analisis_Result, cluster, d.id)
 	if err != nil {
 		log.Println("Error exec query \"set_Fault_Tolerant_Analisis_Result\"", err)
 	}
@@ -97,10 +157,11 @@ func PerfomanceAnalysis(ctx *tools.AppContex, ram_sie int, ram_freq int, cpu_fre
 	return
 }
 
-const set_Fault_Tolerant_Analisis_Result = `
-`
+const set_Fault_Tolerant_Analisis_Result = ` UPDATE Fault_tolerance
+								             SET Cluster = $1
+								             WHERE ID = $2`
 
-func FaultTolerantAnalysis(ctx *tools.AppContex, commission_date string, backup int, error_count int, perf_cluster int) (err error) {
+func FaultTolerantAnalysis(ctx *tools.AppContex, d data_For_FLT_Analysis) (err error) {
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 
 	db := ctx.Context.Value("database").(*sql.DB)
@@ -112,7 +173,7 @@ func FaultTolerantAnalysis(ctx *tools.AppContex, commission_date string, backup 
 		ErrorCount:        0,
 		PerfomanceCluster: 0,
 	}
-	data.Set(commission_date, backup, error_count, perf_cluster)
+	data.Set(d.commission_date, d.backup, d.error_count, d.perf_cluster)
 
 	faultTl.Data <- data
 	result, ok := <-faultTl.Result
@@ -121,8 +182,7 @@ func FaultTolerantAnalysis(ctx *tools.AppContex, commission_date string, backup 
 		return
 	}
 
-	//TODO: Запрос на запись значения анализа отказоустойчивости
-	_, err = db.Exec(set_Fault_Tolerant_Analisis_Result, int(result))
+	_, err = db.Exec(set_Fault_Tolerant_Analisis_Result, int(result), d.id)
 	if err != nil {
 		log.Println("Error exec query \"set_Fault_Tolerant_Analisis_Result\"")
 		return

@@ -63,7 +63,6 @@ func hdd(in datalib.Report) (list model.HDD_list) {
 		hdd.Size = int(v.Size)
 		hdd.Model = v.Model
 
-		//TODO: match type in name of hdd if name contains SSD then type = 2
 		hdd.Type = 1
 
 		list.HDDs = append(list.HDDs, hdd)
