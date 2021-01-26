@@ -4,6 +4,7 @@ import (
 	"database/sql"
 
 	"report-maker-server/database/writer/fill"
+	"report-maker-server/database/writer/write"
 	"report-maker-server/server/model"
 	"report-maker-server/tools"
 
@@ -41,5 +42,17 @@ func datalibToModel(report datalib.Report) (data model.TO_WR) {
 func fromApp(ctx *tools.AppContex, data model.TO_WR) {
 	db := ctx.Context.Value("database").(*sql.DB)
 
-	db.Exec(`select *`)
+	if data.Workstation.ID == "" || data.Workstation.Name == "" ||
+		data.Workstation.Hardware.ID == "" ||
+		data.Workstation.Program_list.ID == "" ||
+		data.Workstation.Perfomance.ID == "" ||
+		data.Workstation.Fault_tolerance.ID == "" {
+		return
+	}
+
+	write.Workstation(db, data)
+	write.Perfomance(db, data)
+	write.Fault_tolerance(db, data)
+	write.Hardware(db, data)
+	write.Software(db, data)
 }
