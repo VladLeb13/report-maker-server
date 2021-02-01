@@ -2,8 +2,10 @@ package writer
 
 import (
 	"database/sql"
+	"log"
 
 	"report-maker-server/database/writer/fill"
+	"report-maker-server/database/writer/update"
 	"report-maker-server/database/writer/write"
 	"report-maker-server/server/model"
 	"report-maker-server/tools"
@@ -50,9 +52,39 @@ func fromApp(ctx *tools.AppContex, data model.TO_WR) {
 		return
 	}
 
+	if check_record(db, data.Workstation.Name) {
+		update.Workstation(db, data)
+		update.Perfomance(db, data)
+		update.Fault_tolerance(db, data)
+		update.Hardware(db, data)
+		update.Software(db, data)
+		return
+	}
+
 	write.Workstation(db, data)
 	write.Perfomance(db, data)
 	write.Fault_tolerance(db, data)
 	write.Hardware(db, data)
 	write.Software(db, data)
+}
+
+const check_WORKSATION = `SELECT ID
+						   FROM Workstation
+						   WHERE Name = $1`
+
+func check_record(db *sql.DB, workstation_name string) (avalible bool) {
+	var workstation_id string
+	err := db.QueryRow(check_WORKSATION, workstation_name).Scan(&workstation_id)
+	if err != nil {
+		log.Panicln("Error query of check_WORKSATION: ", err)
+	}
+
+	if workstation_id == "" {
+		return
+	}
+
+	log.Println("Workstation ", workstation_name, " avalible")
+
+	avalible = true
+	return
 }

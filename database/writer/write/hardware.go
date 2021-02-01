@@ -67,8 +67,8 @@ const (
 								SET HDDID = $1
 								WHERE ID = $2`
 
-	hdd_INSERT_HDD = `INSERT INTO HDD(ID, Manufacturer,Size, Frequency, Serial_number)
-								VALUES($1, $2, $3, $4, $5)`
+	hdd_INSERT_HDD = `INSERT INTO HDD((ID, Model,Size, Type)
+								VALUES($1, $2, $3, $4)`
 )
 
 func Hardware(db *sql.DB, data model.TO_WR) {
