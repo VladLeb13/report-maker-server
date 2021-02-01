@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"log"
+	"time"
 
 	"report-maker-server/classifier"
 	"report-maker-server/config"
@@ -55,6 +56,8 @@ func main() {
 	ctx.Context = context.WithValue(ctx.Context, "FaultTolerantChan", faultTlChan)
 
 	go classifier.Manager(&ctx)
+
+	time.Sleep(time.Duration(cnf.Start_timeout+2) * time.Second)
 
 	go scheduler.Start(&ctx)
 

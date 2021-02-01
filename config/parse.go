@@ -11,6 +11,7 @@ type Config struct {
 	Template_path   string `json:"template_path"`
 	Time_format     string `json:"time_format"`
 	Scheduler_cycle int    `json:"scheduler_cycle"`
+	Start_timeout   int    `json:"start_timeout"`
 }
 
 func Parse() (config Config, err error) {

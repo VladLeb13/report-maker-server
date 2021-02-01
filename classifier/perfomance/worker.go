@@ -4,6 +4,7 @@ import (
 	"log"
 	"time"
 
+	"report-maker-server/config"
 	"report-maker-server/tools"
 
 	"github.com/VladLeb13/classifier/run"
@@ -12,6 +13,7 @@ import (
 func Worker(ctx *tools.AppContex) {
 	perfStruct := ctx.Context.Value("PerformanceAnalyzerStruct").(tools.PerformanceAnalyzerStruct)
 	perfChan := ctx.Context.Value("PerfomanceChan").(tools.PerfomanceChan)
+	cnf := ctx.Context.Value("config").(config.Config)
 
 	in := perfStruct.Data
 	result := perfStruct.Result
@@ -19,7 +21,7 @@ func Worker(ctx *tools.AppContex) {
 
 	go run.Classifier(in, result, status)
 
-	time.Sleep(30 * time.Second)
+	time.Sleep(time.Duration(cnf.Start_timeout) * time.Second)
 
 	var init_manager int
 	for init_manager != 1 {
