@@ -3,12 +3,9 @@ package main
 import (
 	"context"
 	"log"
-	"time"
 
-	"report-maker-server/classifier"
 	"report-maker-server/config"
 	"report-maker-server/database"
-	"report-maker-server/scheduler"
 	"report-maker-server/server"
 	"report-maker-server/tools"
 
@@ -55,11 +52,11 @@ func main() {
 	}
 	ctx.Context = context.WithValue(ctx.Context, "FaultTolerantChan", faultTlChan)
 
-	go classifier.Manager(&ctx)
+	//go classifier.Manager(&ctx)
 
-	time.Sleep(time.Duration(cnf.Start_timeout+2) * time.Second)
+	//time.Sleep(time.Duration(cnf.Start_timeout+2) * time.Second)
 
-	go scheduler.Start(&ctx)
+	//	go scheduler.Start(&ctx)
 
 	err = server.Serve(&ctx)
 	if err != nil {

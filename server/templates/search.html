@@ -31,13 +31,52 @@
    <body class="t-body" style="margin:0;">
       <!--allrecords-->
       <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="2536530" data-tilda-page-id="16522974" data-tilda-page-alias="login" data-tilda-formskey="e183f60a0655f52594983d3f40df3635" >
+         <div id="rec196477010" class="r t-rec" style=" " data-animationappear="off" data-record-type="456" >
+            <!-- T456 -->
+            <div id="nav196477010marker"></div>
+            <div id="nav196477010" class="t456 t456__positionstatic " style="background-color: rgba(0,0,0,1); " data-bgcolor-hex="#000000" data-bgcolor-rgba="rgba(0,0,0,1)" data-navmarker="nav196477010marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="right" data-menu="yes">
+               <div class="t456__maincontainer " style="">
+                  <div class="t456__leftwrapper" style="">
+                     <div >
+                        <div class="t456__logo t-title" field="title" style="color:#ffffff;">Report maker server</div>
+                     </div>
+                  </div>
+                  <div class="t456__rightwrapper t456__menualign_right" style="">
+                     <ul class="t456__list">
+                        <li class="t456__list_item"><a class="t-menu__link-item" href="http://localhost:8080/home" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;" data-menu-item-number="1">Home</a> </li>
+                        <li class="t456__list_item"><a class="t-menu__link-item" href="http://localhost:8080/login" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;" data-menu-item-number="2">Login</a> </li>
+                        <li class="t456__list_item"><a class="t-menu__link-item" href="http://localhost:8080/reports" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;" data-menu-item-number="3">Reports</a> </li>
+                        <li class="t456__list_item"><a class="t-menu__link-item" href="http://localhost:8080/search" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;" data-menu-item-number="3">Search</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <style>@media screen and (max-width: 980px) { #rec196477010 .t456__leftcontainer{ padding: 20px; }
+               }
+               @media screen and (max-width: 980px) { #rec196477010 .t456__imglogo{ padding: 20px 0; }
+               }
+            </style>
+            <script type="text/javascript"> $(document).ready(function() { t456_highlight(); });
+               $(window).resize(function() { t456_setBg('196477010');
+               });
+               $(document).ready(function() { t456_setBg('196477010');
+               });
+            </script><script type="text/javascript"> $(document).ready(function() { setTimeout(function(){ t_onFuncLoad('t_menusub_init', function() { t_menusub_init('196477010'); }); }, 500); });</script>
+            <style>@media screen and (max-width: 980px) { #rec196477010 .t-menusub__menu .t-menusub__link-item { color:#ffffff !important; } #rec196477010 .t-menusub__menu .t-menusub__link-item.t-active { color:#ffffff !important; }
+               }
+            </style>
+            <!--[if IE 8]>
+            <style>#rec196477010 .t456 { filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', endColorstr='#D9000000');
+               }
+            </style>
+            <![endif]--> 
+         </div>
          <div id="rec269215571" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px;background-color:#111412; " data-record-type="255" data-bg-color="#111412">
             <!-- T225 -->
             <div class="t225">
                <div class="t-container t-align_center">
                   <div class="t-col t-col_10 t-prefix_1">
-                     <div class="t225__title t-title t-title_md" field="title" style="color:#ffffff;">Вход</div>
-                     <div class="t225__descr t-descr t-descr_xxl" field="descr" style="color:#ffffff;font-weight:400;">Авторизуйтесь для просмотра отчетов</div>
+                     <div class="t225__title t-title t-title_md" field="title" style="color:#ffffff;">Поиск РС</div>
                   </div>
                </div>
             </div>
@@ -48,19 +87,13 @@
                <div class="t-container">
                   <div class="t-col t-col_8 t-prefix_2">
                      <div>
-                        <form id="form269215572" name='form269215572' role="form" action='' method='POST' data-formactiontype="0" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_2 " data-success-callback="t678_onSuccess" >
-                           <!-- NO ONE SERVICES CONNECTED --> 
+                        <form  action="http://localhost:8080/searching" method="POST"  data-inputbox=".t-input-group" >
+                       
                            <div class="js-successbox t-form__successbox t-text t-text_md" style="display:none;"></div>
                            <div class="t-form__inputsbox">
-                              <div class="t-input-group t-input-group_nm" data-input-lid="1494858943227">
+                              <div class="t-input-group t-input-group_nm">
                                  <div class="t-input-block">
-                                    <input type="text" name="Name" class="t-input js-tilda-rule " value="" placeholder="login" data-tilda-req="1" data-tilda-rule="name" style="color:#000000; border:1px solid #000000; "> 
-                                    <div class="t-input-error"></div>
-                                 </div>
-                              </div>
-                              <div class="t-input-group t-input-group_in" data-input-lid="1493283059688">
-                                 <div class="t-input-block">
-                                    <input type="text" name="Input" class="t-input js-tilda-rule " value="" placeholder="password" data-tilda-req="1" style="color:#000000; border:1px solid #000000; "> 
+                                    <input type="text" name="pc_name" class="t-input js-tilda-rule " value="" placeholder="PC NAME" data-tilda-req="1" data-tilda-rule="name" style="color:#000000; border:1px solid #000000; "> 
                                     <div class="t-input-error"></div>
                                  </div>
                               </div>
@@ -77,7 +110,7 @@
                                     </div>
                                  </div>
                               </div>
-                              <div class="t-form__submit"> <button type="submit" class="t-submit" style="color:#ffffff;background-color:#131715;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;" >Sign up</button> </div>
+                             <div class="t-form__submit"> <input type="submit" value="Найти" class="t-submit" style="color:#ffffff;background-color:#131715;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;" > </div>
                            </div>
                            <div class="t-form__errorbox-bottom">
                               <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
@@ -109,7 +142,7 @@
             </script>
          </div>
       </div>
-      <!--/allrecords--><!-- Tilda copyright. Don't remove this line -->
+
           <!-- Stat --><script type="text/javascript">if (! window.mainTracker) { window.mainTracker = 'tilda'; }	(function (d, w, k, o, g) { var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);}; s.type = "text/javascript"; s.async = true; s.key = k; s.id = "tildastatscript"; s.src=g; if (w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); } })(document, window, '8d7b10edf895287c8936ffde67b63a02','script','https://static.tildacdn.com/js/tildasimplestat-0.1.min.js');</script>
    </body>
 </html>
