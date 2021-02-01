@@ -125,7 +125,8 @@ func PerfomanceAnalysis(ctx *tools.AppContex, d data_For_Perfomance_Analysis) (e
 	db := ctx.Context.Value("database").(*sql.DB)
 	perfChan := ctx.Context.Value("PerfomanceChan").(tools.PerfomanceChan)
 
-	params := tools.PerformanceParameters{}.Set(d.ram_sie, d.ram_freq, d.cpu_freq, d.cpu_cores, d.cpu_thread, d.disk_type)
+	perf_params := tools.PerformanceParameters{}
+	params := perf_params.Set(d.ram_sie, d.ram_freq, d.cpu_freq, d.cpu_cores, d.cpu_thread, d.disk_type)
 
 	data := tools.DataForPerformanceAnalyze{}
 	data.Set(params)
