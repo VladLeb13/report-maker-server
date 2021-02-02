@@ -11,31 +11,31 @@ import (
 )
 
 const (
-	get_Data_For_Analysis = ` 	SELECT    HardwareID as hard_id
- 										, PerfomanceID as perf_id
- 										, Fault_toleranceID as flt_id 				
+	get_Data_For_Analysis = ` 	SELECT    HardwareID AS "hard_id"
+ 										, PerfomanceID AS "perf_id"
+ 										, Fault_toleranceID AS "flt_id" 				
 								FROM Workstation
 								WHERE Allow_analysis = 1`
 
-	get_Data_For_Perfomance = ` 	SELECT  RAM.Size AS ram_size
-								, RAM.Frequency AS ram_freq
-								, CPU.Frequency AS cpu_freq
-								, CPU.Number_cores AS cpu_cores
-								, CPU.Number_threads AS cpu_thread
-								, HDD.Type AS disk_type
+	get_Data_For_Perfomance = ` 	SELECT  RAM.Size AS "ram_size"
+								, RAM.Frequency AS "ram_freq"
+								, CPU.Frequency AS "cpu_freq"
+								, CPU.Number_cores AS "cpu_cores"
+								, CPU.Number_threads AS "cpu_thread"
+								, HDD.Type AS "disk_type"
 								FROM Hardware
-									INNER JOIN Hardware ON CPU_list.ID = Hardware.CPU_listID
+									INNER JOIN CPU_list ON CPU_list.ID = Hardware.CPU_listID
 									INNER JOIN CPU ON CPU.ID = CPU_list.CPUID
-									INNER JOIN Hardware ON Hardware.ID = Hardware.RAM_listID
-									INNER JOIN CPU ON RAM.ID = RAM_list.RAMID
-									INNER JOIN Hardware ON Hardware.ID = Hardware.HDD_listID
-									INNER JOIN CPU ON HDD.ID = HDD_list.HDDID
+									INNER JOIN RAM_list ON RAM_list.ID = Hardware.RAM_listID
+									INNER JOIN RAM ON RAM.ID = RAM_list.RAMID
+									INNER JOIN HDD_list ON HDD_list.ID = Hardware.HDD_listID
+									INNER JOIN HDD ON HDD.ID = HDD_list.HDDID
 								WHERE Hardware.ID = $1`
 
-	get_Data_For_FLT = ` 	SELECT Fault_tolerance.Commissioning_date AS commission_date 
- 								, Fault_tolerance.Backup AS backup
-								, Fault_tolerance.Number_of_error AS error_count 
-								, Perfomance.Cluster AS perf_cluster
+	get_Data_For_FLT = ` 	SELECT Fault_tolerance.Commissioning_date AS "commission_date" 
+ 								, Fault_tolerance.Backup AS "backup"
+								, Fault_tolerance.Number_of_error AS "error_count" 
+								, Perfomance.Cluster AS "perf_cluster"
 						FROM Fault_tolerance
 							INNER JOIN Perfomance ON Perfomance.ID = $1
 						WHERE Fault_tolerance.ID = $2`
@@ -83,7 +83,7 @@ func Start(ctx *tools.AppContex) {
 		var resp []data_For_Analysis
 		for rows.Next() {
 			var v data_For_Analysis
-			rows.Scan(&v)
+			rows.Scan(&v.hard_id, &v.perf_id, &v.flt_id)
 
 			resp = append(resp, v)
 		}
@@ -92,7 +92,14 @@ func Start(ctx *tools.AppContex) {
 		for _, v := range resp {
 
 			var perfomanceParam data_For_Perfomance_Analysis
-			err = db.QueryRow(get_Data_For_Perfomance, v.hard_id).Scan(&perfomanceParam)
+			err = db.QueryRow(get_Data_For_Perfomance, v.hard_id).Scan(
+				&perfomanceParam.ram_sie,
+				&perfomanceParam.ram_freq,
+				&perfomanceParam.cpu_freq,
+				&perfomanceParam.cpu_cores,
+				&perfomanceParam.cpu_thread,
+				&perfomanceParam.disk_type,
+			)
 			if err != nil {
 				log.Println("Error in scan values get_DataForPerfomance ", err)
 			}
@@ -102,7 +109,12 @@ func Start(ctx *tools.AppContex) {
 			}
 
 			var fltParam data_For_FLT_Analysis
-			err = db.QueryRow(get_Data_For_FLT, v.perf_id, v.flt_id).Scan(&fltParam)
+			err = db.QueryRow(get_Data_For_FLT, v.perf_id, v.flt_id).Scan(
+				&fltParam.commission_date,
+				&fltParam.backup,
+				&fltParam.error_count,
+				&fltParam.perf_cluster,
+			)
 			if err != nil {
 				log.Println("Error in scan values get_DataForFLT ", err)
 			}

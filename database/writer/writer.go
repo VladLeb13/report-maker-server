@@ -11,6 +11,7 @@ import (
 	"report-maker-server/tools"
 
 	"github.com/VladLeb13/report-maker-lib/datalib"
+	"github.com/google/uuid"
 )
 
 func AddRecord(ctx *tools.AppContex, data interface{}) {
@@ -29,7 +30,8 @@ func fromRreiver(ctx *tools.AppContex, report *datalib.Report) {
 }
 
 func datalibToModel(report datalib.Report) (data model.TO_WR) {
-	data.Workstation.Name = report.Software.OS.Name
+	data.Workstation.ID = uuid.New().String()
+	data.Workstation.Name = report.Software.OS.UserName
 	data.Workstation.Comment = "buh"
 	data.Workstation.Allow_analysis = 0
 
@@ -76,7 +78,7 @@ func check_record(db *sql.DB, workstation_name string) (avalible bool) {
 	var workstation_id string
 	err := db.QueryRow(check_WORKSATION, workstation_name).Scan(&workstation_id)
 	if err != nil {
-		log.Panicln("Error query of check_WORKSATION: ", err)
+		log.Println("Error query of check_WORKSATION: ", err)
 	}
 
 	if workstation_id == "" {

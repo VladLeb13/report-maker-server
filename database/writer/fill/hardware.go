@@ -8,6 +8,8 @@ import (
 )
 
 func Hardware(report datalib.Report) (hardware model.Hardware) {
+	hardware.ID = uuid.New().String()
+
 	hardware.CPU_list = cpu(report)
 	hardware.RAM_list = ram(report)
 	hardware.HDD_list = hdd(report)

@@ -43,7 +43,7 @@ const (
 								SET RAM_listID = $1
 								WHERE ID = $2`
 
-	ram_list_INSERT_RAM_LIST = `INSERT INTO RAM_listID(ID)
+	ram_list_INSERT_RAM_LIST = `INSERT INTO RAM_list(ID)
 								VALUES($1)`
 
 	ram_list_UPDATE_RAM_list_SET_RAMID = `UPDATE RAM_list
@@ -57,7 +57,7 @@ const (
 //hardware-hdd
 const (
 	hardware_UPDATE_HARDWARE_SET_HDD_LIST = `UPDATE Hardware
-								SET HDD_list = $1
+								SET HDD_listID = $1
 								WHERE ID = $2`
 
 	hdd_list_INSERT_HDD_LIST = `INSERT INTO HDD_list(ID)
@@ -67,7 +67,7 @@ const (
 								SET HDDID = $1
 								WHERE ID = $2`
 
-	hdd_INSERT_HDD = `INSERT INTO HDD((ID, Model,Size, Type)
+	hdd_INSERT_HDD = `INSERT INTO HDD(ID, Model,Size, Type)
 								VALUES($1, $2, $3, $4)`
 )
 

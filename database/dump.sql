@@ -1,8 +1,7 @@
 PRAGMA foreign_keys=OFF;
-BEGIN TRANSACTION;
 CREATE TABLE `Program_list` (
-	`ID`	TEXT NOT NULL UNIQUE,
-	`ProgramID`	TEXT NOT NULL,
+	`ID`	TEXT NOT NULL,
+	`ProgramID`	TEXT,
 	PRIMARY KEY(`ID`),
 	FOREIGN KEY(`ProgramID`) REFERENCES `Program`(`ID`)
 );
@@ -15,7 +14,7 @@ CREATE TABLE `Perfomance` (
 	PRIMARY KEY(`ID`)
 );
 CREATE TABLE `Fault_tolerance` (
-	`ID`	INTEGER NOT NULL,
+	`ID`	TEXT NOT NULL,
 	`Commissioning_date`	TEXT,
 	`Backup`	INTEGER DEFAULT 0,
 	`Number_of_error`	INTEGER DEFAULT 0,
@@ -23,7 +22,7 @@ CREATE TABLE `Fault_tolerance` (
 	PRIMARY KEY(`ID`)
 );
 CREATE TABLE `Program` (
-	`ID`	TEXT NOT NULL UNIQUE,
+	`ID`	TEXT NOT NULL,
 	`Manufacturer`	TEXT,
 	`Name`	TEXT,
 	`Version`	TEXT,

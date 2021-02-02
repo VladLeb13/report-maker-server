@@ -3,6 +3,7 @@ package write
 import (
 	"database/sql"
 	"log"
+	"time"
 
 	"report-maker-server/server/model"
 )
@@ -21,6 +22,7 @@ const (
 )
 
 func Software(db *sql.DB, data model.TO_WR) {
+	time.Sleep(time.Second * 10)
 	_, err := db.Exec(program_list_INSERT_PROG_LIST, data.Workstation.Program_list.ID)
 	if err != nil {
 		log.Println("Error write: program_list_INSERT_PROG_LIST ", err)

@@ -52,17 +52,17 @@ func analysis(data tools.FaultTolerantParameters) (result float64) {
 	startIdx := data.PerfomanceCluster
 
 	if !data.Backup {
-		startIdx = -backupIdx
+		startIdx = startIdx - backupIdx
 	}
 
 	if data.ErrorCount >= 15 {
-		startIdx = -errorIdx
+		startIdx = startIdx - errorIdx
 	}
 
 	t := time.Now()
 	t = t.AddDate(-5, 0, 0)
 	if data.CommissioningDate.Before(t) {
-		startIdx = -commissioningDateIdx
+		startIdx = startIdx - commissioningDateIdx
 	}
 
 	if startIdx <= 0 {
