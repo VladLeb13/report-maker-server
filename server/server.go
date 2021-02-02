@@ -44,6 +44,8 @@ func Serve(ctx *tools.AppContex) (err error) {
 		authorized.POST("/searching", controller.Searching)
 		authorized.GET("/searching", controller.Searching)
 
+		authorized.GET("/flt", controller.Flt)
+
 	}
 
 	router.Run(":8080")
