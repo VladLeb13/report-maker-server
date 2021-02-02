@@ -103,12 +103,29 @@ func Flt(ctx *gin.Context) {
 		data_form = append(data_form, fd)
 	}
 
+	type f struct {
+		D   []Form_data_flt
+		All float64
+	}
+
+	frm := f{}
+	frm.D = data_form
+
+	length := len(data_form)
+
+	var buff float64
+	for _, v := range data_form {
+		buff = float64(int(buff) + v.FaultT_Cluster)
+	}
+
+	frm.All = buff / float64(length)
+
 	path := cnf.Template_path
 	tmpl, err := template.ParseFiles(path + "flt-report.html")
 	if err != nil {
 		fmt.Println("error parce template")
 	} else {
-		tmpl.Execute(ctx.Writer, data_form)
+		tmpl.Execute(ctx.Writer, frm)
 	}
 
 }

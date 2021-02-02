@@ -6,7 +6,6 @@ import (
 	"log"
 	"time"
 
-	"report-maker-server/config"
 	"report-maker-server/tools"
 )
 
@@ -68,12 +67,10 @@ type (
 )
 
 func Start(ctx *tools.AppContex) {
-	cnf := ctx.Context.Value("config").(config.Config)
 	db := ctx.Context.Value("database").(*sql.DB)
 
-	timeout := cnf.Scheduler_cycle
 	for { //общий цикл для воркера
-		time.Sleep(time.Duration(timeout) * time.Minute)
+		time.Sleep(10 * time.Second)
 
 		rows, err := db.Query(get_Data_For_Analysis)
 		if err != nil {
