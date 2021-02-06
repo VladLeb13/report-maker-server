@@ -55,6 +55,11 @@ func fromApp(ctx *tools.AppContex, data model.TO_WR) {
 	}
 
 	if check_record(db, data.Workstation.Name) {
+		err := update.LoadLink(db, &data)
+		if err != nil {
+			log.Println("Fail update Workstation ", data.Workstation.Name, " error: ", err)
+			return
+		}
 		update.Workstation(db, data)
 		update.Perfomance(db, data)
 		update.Fault_tolerance(db, data)

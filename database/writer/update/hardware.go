@@ -30,7 +30,7 @@ const (
 								, CPU.Number_threads AS "Number_threads"
 								FROM CPU_list
 								INNER JOIN CPU ON CPU.ID = CPU_list.CPUID
-								WHERE ID = $1`
+								WHERE CPU_list.ID = $1`
 
 	cpu_list_DELETE_CPU_LIST = `DELETE FROM CPU_list WHERE ID = $1 AND CPUID = $2`
 	cpu_DELETE_CPU           = `DELETE FROM CPU WHERE ID = $1`
@@ -52,7 +52,7 @@ const (
 								, RAM.Serial_number AS "Serial_number"
 								FROM RAM_list
 								INNER JOIN RAM ON RAM.ID = RAM_list.RAMID
-								WHERE ID = $1`
+								WHERE RAM_list.ID = $1`
 
 	ram_list_DELETE_RAM_LIST = `DELETE FROM RAM_list WHERE ID = $1 AND RAMID = $2`
 	ram_DELETE_RAM           = `DELETE FROM RAM WHERE ID = $1`
@@ -73,7 +73,7 @@ const (
 								, HDD.Type AS "Type"
 								FROM HDD_list
 								INNER JOIN HDD ON HDD.ID = HDD_list.HDDID
-								WHERE ID = $1`
+								WHERE HDD_list.ID = $1`
 
 	hdd_list_DELETE_HDD_LIST = `DELETE FROM HDD_list WHERE ID = $1 AND HDDID = $2`
 	hdd_DELETE_HDD           = `DELETE FROM HDD WHERE ID = $1`
@@ -82,7 +82,7 @@ const (
 								SET HDDID = $1
 								WHERE ID = $2`
 
-	hdd_INSERT_HDD = `INSERT INTO HDD((ID, Model,Size, Type)
+	hdd_INSERT_HDD = `INSERT INTO HDD(ID, Model,Size, Type)
 								VALUES($1, $2, $3, $4)`
 )
 

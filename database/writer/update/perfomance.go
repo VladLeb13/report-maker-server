@@ -19,7 +19,7 @@ const (
 
 const perfomance_SELECT_PERFOMANCE = `SELECT CPU, RAM, HDD, Cluster
 										FROM Perfomance
-										WHERE ID = 1$`
+										WHERE ID = $1`
 
 func Perfomance(db *sql.DB, new model.TO_WR) {
 

@@ -19,7 +19,7 @@ const (
 
 const fault_tolerance_SELECT__FLT_TOLERANCE = `SELECT Commissioning_date, Backup, Number_of_error, Cluster
 										FROM Fault_tolerance
-										WHERE ID = 1$`
+										WHERE ID = $1`
 
 func Fault_tolerance(db *sql.DB, new model.TO_WR) {
 

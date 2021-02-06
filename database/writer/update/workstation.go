@@ -12,9 +12,9 @@ const workstation_UPDATE_WORKSTATION = `UPDATE Workstation
 										, Allow_analysis = $2
 										WHERE ID = $3`
 
-const workstation_SELECT_WORKSTATION = `SELECT Comment, Allow_analysis,  
+const workstation_SELECT_WORKSTATION = `SELECT Comment, Allow_analysis  
 										FROM Workstation
-										WHERE ID = 1$`
+										WHERE ID = $1`
 
 func Workstation(db *sql.DB, new model.TO_WR) {
 

@@ -15,8 +15,8 @@ const (
 								, Program.Version AS "Version"
 								, Program.Install_on AS "Install_on"
 								FROM Program_list
-								INNER JOIN CPU ON Program.ID = Program_list.ProgramID
-								WHERE ID = $1`
+								INNER JOIN Program ON Program.ID = Program_list.ProgramID
+								WHERE Program_list.ID = $1`
 
 	program_list_DELETE_PROGRAM_LIST = `DELETE FROM Program_list WHERE ID = $1 AND ProgramID = $2`
 	program_DELETE_PROGRAM           = `DELETE FROM Program WHERE ID = $1`
