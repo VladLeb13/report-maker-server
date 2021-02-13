@@ -107,17 +107,15 @@ func normalizeEvent(events *datalib.Events) {
 	var (
 		normlist   []datalib.Event
 		oldmessage string
-		olduser    string
 	)
 	for _, v := range sl {
-		if v.Message != oldmessage && v.User != olduser {
+		if v.Message != oldmessage {
 			if _, err := time.Parse(time.RFC3339, v.TimeWritten); err != nil {
 				v.TimeWritten = normDate(v.TimeWritten, "20060102150405")
 			}
 			normlist = append(normlist, v)
 		}
 		oldmessage = v.Message
-		olduser = v.User
 	}
 	events.List = normlist
 }
