@@ -7,7 +7,7 @@ import (
 	"report-maker-server/config"
 	"report-maker-server/tools"
 
-	"github.com/VladLeb13/classifier/run"
+	"github.com/VladLeb13/gophernet/run"
 )
 
 func Worker(ctx *tools.AppContex) {

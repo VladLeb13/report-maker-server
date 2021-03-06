@@ -48,6 +48,7 @@ func Serve(ctx *tools.AppContex) (err error) {
 
 	}
 
+	router.Static("/static", "./server/templates/")
 	router.Run(":8080")
 
 	return errors.New("Server shutdown")

@@ -9,7 +9,7 @@ import (
 	"report-maker-server/server"
 	"report-maker-server/tools"
 
-	class "github.com/VladLeb13/classifier/run"
+	class "github.com/VladLeb13/gophernet/run"
 )
 
 func main() {

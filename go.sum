@@ -1,8 +1,6 @@
 github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
-github.com/VladLeb13/classifier v0.0.0-20210110063754-51e80dfc86c1 h1:JhxIkB17gvv3mWvEr+AlsomEztw7SHdyITGHYJlK21M=
-github.com/VladLeb13/classifier v0.0.0-20210110063754-51e80dfc86c1/go.mod h1:aMtO6Og5i5BJxfhDiBoDgNGRHnYegtu7BFbz6Zz+ThA=
-github.com/VladLeb13/classifier v0.0.0-20210201124744-98a024b98fee h1:s1ULXXejrD+r4xSPkkwQRtAqfIWXHDjqdyQaSvKQ/Uk=
-github.com/VladLeb13/classifier v0.0.0-20210201124744-98a024b98fee/go.mod h1:aMtO6Og5i5BJxfhDiBoDgNGRHnYegtu7BFbz6Zz+ThA=
+github.com/VladLeb13/gophernet v0.0.0-20210305161132-68bd3a27f6e2 h1:jIy9SB1KMqHT6m52yBHVVpXiaa+ozpFMdpQ/OG9LPUk=
+github.com/VladLeb13/gophernet v0.0.0-20210305161132-68bd3a27f6e2/go.mod h1:wYmU+qDc174THdlfQYyecMc5Ef9OoMX2YqLiNnUMjrk=
 github.com/VladLeb13/report-maker-lib v1.0.7 h1:uSnuyZIhHIAGKU2/NMLdHMu/R0Af/r60uBFiarYjK9g=
 github.com/VladLeb13/report-maker-lib v1.0.7/go.mod h1:Cywmh7zdiZxKAnuACJnHrHyHRgZqqWD6sIXLfrDIVMM=
 github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af/go.mod h1:K08gAheRH3/J6wwsYMMT4xOr94bZjxIelGM0+d/wbFw=

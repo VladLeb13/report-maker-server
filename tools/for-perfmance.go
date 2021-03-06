@@ -1,7 +1,7 @@
 package tools
 
 import (
-	class "github.com/VladLeb13/classifier/run"
+	class "github.com/VladLeb13/gophernet/run"
 )
 
 type (
