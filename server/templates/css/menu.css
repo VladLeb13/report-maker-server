@@ -1,0 +1,40 @@
+.head{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: aliceblue;
+    font-family: system-ui;
+    font-weight: 750;
+    height: 3em;
+}
+
+.menu-row{
+    flex-grow: 15;
+    flex-shrink: 2;
+    height: 10px;
+}
+
+.head-menu{
+    flex-basis: 230px;
+    flex-grow: 1;
+    height: 2em;
+    padding-top: 1em;
+    padding-left: 8px;
+}
+
+.head-menu-item{
+    opacity: 0.7;
+}
+
+a:link{
+    text-decoration: none; 
+}
+
+a:visited{
+    color: aliceblue;
+}
+
+.head-menu-item:hover {
+    opacity: 1;
+}
+  
