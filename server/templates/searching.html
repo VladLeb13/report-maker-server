@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+
 <head>
     <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
     <div class="head">
         <div class="menu-row"></div>
         <div class="head-menu">
             <span class="head-menu-item"><a href="/home">home</a></span>
-            <span  class="head-menu-item"><a href="/reports">reports</a></span>
             <span  class="head-menu-item"><a href="/search">search</a></span>
             <span  class="head-menu-item"><a href="/flt">f-tolerance</a></span>
         </div>
     </div>
 </head>
+</head>
 <body>
-    <h1>search-result</h1>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <div class="base" >
+        <div class="search-block">
+            <div class="search-content">
+                <form action="/searching" method="post" class="form">
+                    <div class="search-input">
+                        <label for="search" class="search-find-label">Поиск PC:</label>
+                        <div class="search-control">
+                            <input type="search" name="pc_name" id="pc_name" class="search-control-find-elem">
+                        </div>
+                        <div class="search-control-find-button">
+                            <input type="submit" value = "" name="search" id="search" class="search-control-find-button-elem">
+                        </div>
+                    </div>
+                 </form>
+                 <div class="search-input-result">
+                    <div class="logo">
+                        <img src="/static/img/PC.png" width="80px" alt="">
+                        <h4 class="logo-caption">{{.PC_Name}}</h4>
+                   </div>
+                   <div class="search-input-result-content">
+                    <table class="search-input-result-content-table"  id="t01">
+                        <tr>
+                            <th>ЦП</th>
+                            <th>Частота ЦП</th>
+                            <th>Кол-во ядер</th>
+                            <th>Кол-во потоков</th>
+                            <th>Объем ОЗУ</th>
+                            <th>Частота ОЗУ</th>
+                            <th>Тип ЖД</th>
+                            <th>Индекс производительости</th>
+                            <th>Индекс отказоустойчивости</th>
+                        </tr>
+                    <tr>
+                        <td>{{.CPU}}</td> <td>{{.CPU_Freq}} </td>
+                        <td>{{.CPU_Cores}}</td> <td>{{.CPU_Thred}}</td><td>{{.RAM_Size}}</td><td>{{.RAM_Freq}}</td>
+                        <td>{{.HDD_Type}}</td><td>{{.Perfomance_Cluster}}</td><td>{{.FaultT_Cluster}}</td>
+                    </tr>
+       
+                    </table>
+                   </div>
+                 </div>
+
+            </div>  
+        </div>
+    </div>
 </body>
 </html>

@@ -7,13 +7,29 @@
         <div class="menu-row"></div>
         <div class="head-menu">
             <span class="head-menu-item"><a href="/home">home</a></span>
-            <span  class="head-menu-item"><a href="/reports">reports</a></span>
             <span  class="head-menu-item"><a href="/search">search</a></span>
             <span  class="head-menu-item"><a href="/flt">f-tolerance</a></span>
         </div>
     </div>
 </head>
-<body>
-    <h1>search</h1>
-</body>
+    <body>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <div class="base" >
+            <div class="search-block">
+                <div class="search-content">
+                    <form action="/searching" method="post">
+                        <div class="search-input">
+                            <label for="search" class="search-find-label">Поиск PC:</label>
+                            <div class="search-control">
+                                <input type="search" name="pc_name" id="pc_name" class="search-control-find-elem">
+                            </div>
+                            <div class="search-control-find-button">
+                                <input type="submit" value = "" name="search" id="search" class="search-control-find-button-elem">
+                            </div>
+                        </div>
+                     </form> 
+                </div>  
+            </div>
+        </div>
+    </body>
 </html>

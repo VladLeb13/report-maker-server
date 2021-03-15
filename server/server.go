@@ -26,13 +26,11 @@ func Serve(ctx *tools.AppContex) (err error) {
 
 	authorized := router.Group("/")
 	authorized.Use(sessions.Sessions("auth-session", store))
+
 	authorized.Use(controller.BaseAuth())
 	{
 		authorized.GET("/home", controller.Home)
 		authorized.POST("/home", controller.Home)
-
-		authorized.GET("/reports", controller.Reports)
-		authorized.POST("/reports", controller.Home)
 
 		authorized.GET("/login", controller.Login)
 		authorized.POST("/login", controller.Login)

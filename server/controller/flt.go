@@ -104,21 +104,17 @@ func Flt(ctx *gin.Context) {
 	}
 
 	type f struct {
-		D   []Form_data_flt
-		All float64
+		D []Form_data_flt
+		//All float64
 	}
 
 	frm := f{}
 	frm.D = data_form
 
-	length := len(data_form)
-
 	var buff float64
 	for _, v := range data_form {
 		buff = float64(int(buff) + v.FaultT_Cluster)
 	}
-
-	frm.All = buff / float64(length)
 
 	path := cnf.Template_path
 	tmpl, err := template.ParseFiles(path + "flt-report.html")

@@ -1,0 +1,256 @@
+.base{
+    padding: 30px;
+    background-color: lightgray;
+    color: black;
+    font-family: system-ui;
+    height: 650px;
+    margin-top: 0.2em;
+}
+
+.home-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: min-content;
+    min-width: min-content;
+    height: 95%;
+    background-image: url(/static/img/home-logo.jpg);
+}
+
+.home-content{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.login-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: min-content;
+    min-width: min-content;
+    height: 95%;
+}
+
+.login-content{
+    font-size: 25px;
+    width: 350px;
+    height: 600px;
+}
+
+.login-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+
+.login-label{
+    margin-left: 4px;
+    margin-right: 12px;
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+
+.login-control{
+width: 250px;
+}
+
+.login-control-elem{
+    margin: 3px;
+    font-size: 19px;
+    width: 230px;
+    height: 33px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.login-button{
+margin-left: 100px;
+width: 150px;
+margin-top: 80px;
+}
+
+
+.button {
+    font-weight: bold;
+    font-size: 19px;
+    padding: 14px 40px;
+    width: 150px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+.search-block{
+    display: flex;
+    justify-content: center;
+    min-height: min-content;
+    min-width: min-content;
+    height: 95%;
+    background-image: url(/static/img/home-logo.jpg);
+}
+
+.search-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 900px;
+    font-size: 40px;
+    text-align: center;
+    height: 15em;
+    margin-bottom: 110px;
+}
+
+.search-input{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 11px;
+    padding: 8px;
+    height: 2em;
+
+    
+}
+
+.search-find-label{
+    flex-basis: content;
+    flex-grow: 3;
+    margin-left: 4px;
+    margin-right: 12px;
+    padding-top: 20px;
+    float: left;
+    text-align: right;
+    font-size: 25px;
+    height: 60px;
+}
+
+
+.search-control{
+    height: 60px;
+    flex-basis: content;
+    flex-grow: 3;
+    padding-bottom: 9px;
+    flex-basis: 220px;
+    margin-right: 12px;
+}
+
+.search-control-find-elem{
+    margin: 3px;
+    flex-basis: content;
+    font-size: 19px;
+    width: 230px;
+    height: 45px;
+    border-radius: 12px;
+    text-align: center;
+    padding-bottom: -11px;
+}
+
+.search-control-find-button{
+    margin-top: 11px;
+    padding-top: 10px;
+    height: 60px;
+    flex-basis: content;
+    flex-grow: 3;
+}
+
+.search-control-find-button-elem {
+    background-size: contain;
+background-position: center;
+    background-image: url(/static/img/find-ico.jpg);
+    margin-left: -12px;
+    font-weight: bold;
+    font-size: 19px;
+    height: 45px;
+    width: 45px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.search-control-find-button-elem:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.form{
+    height: 0;
+}
+.logo{
+    flex-basis: 900px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    min-width: min-content;
+    height: max-content;
+}
+
+.logo-caption{
+margin: 3px;
+}
+
+
+.search-input-result{
+    flex-grow: 16;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    flex-basis: 900px;
+    font-weight: 700;
+    margin-top: 95px;
+    justify-content: center;
+    padding-bottom: 8px;
+    height: 475px;
+}
+
+.search-input-result-content{
+    flex-basis: 1050px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 365px;
+    overflow: auto;
+}
+
+table{
+    flex-basis: 900px;
+}
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  #t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  #t01 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+  #t01 th {
+    background-color: black;
+    color: white;
+  }
+
+.break1{
+    margin-top: 9px;
+    flex-basis: 900px;
+    height: 3px;
+    flex-shrink: 2;
+}

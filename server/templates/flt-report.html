@@ -1,31 +1,54 @@
-
 <!DOCTYPE html>
 <html>
-<title></title>
+
 <head>
     <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
     <div class="head">
         <div class="menu-row"></div>
         <div class="head-menu">
             <span class="head-menu-item"><a href="/home">home</a></span>
-            <span  class="head-menu-item"><a href="/reports">reports</a></span>
             <span  class="head-menu-item"><a href="/search">search</a></span>
             <span  class="head-menu-item"><a href="/flt">f-tolerance</a></span>
         </div>
     </div>
 </head>
+</head>
 <body>
-    <h1>fltrepot</h1>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <div class="base" >
+        <div class="search-block">
+            <div class="search-content">
+                <div class="search-input-result">
+                    <div class="logo">
+                        <img src="/static/img/PC.png" width="80px" alt="">
+                   </div>
+                   <div class="search-input-result-content">
+                    <table class="search-input-result-content-table"  id="t01">
+                        <tr>
+                            <th>DNS Имя</th>
+                            <th>ЦП</th>
+                            <th>Частота ЦП</th>
+                            <th>Кол-во ядер</th>
+                            <th>Кол-во потоков</th>
+                            <th>Объем ОЗУ</th>
+                            <th>Частота ОЗУ</th>
+                            <th>Тип ЖД</th>
+                            <th>Индекс производительости</th>
+                            <th>Индекс отказоустойчивости</th>
+                        </tr>
+                        {{range $p :=  .D}}
+                    <tr>
+                        <td>{{$p.PC_Name}}</td><td>{{$p.CPU}}</td> <td>{{$p.CPU_Freq}} </td>
+                        <td>{{$p.CPU_Cores}}</td> <td>{{$p.CPU_Thred}}</td><td>{{$p.RAM_Size}}</td><td>{{$p.RAM_Freq}}</td>
+                        <td>{{$p.HDD_Type}}</td><td>{{$p.Perfomance_Cluster}}</td><td>{{$p.FaultT_Cluster}}</td>
+                    </tr>
+                    {{end}}
+                    </table>
+                   </div>
+                 </div>
 
-
-
-
-               {{range $p :=  .D}}
-{{$p.PC_Name}}  
-{{$p.CPU}}
-{{$p.CPU_Freq}} {{$p.CPU_Cores}}{{$p.CPU_Thred}}{{$p.RAM_Size}}{{$p.RAM_Freq}} {{$p.HDD_Type}}  {{$p.Perfomance_Cluster}} {{$p.FaultT_Cluster}} 
-               {{end}}
-               {{.All}}
-                          
-            </body>
-            </html>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

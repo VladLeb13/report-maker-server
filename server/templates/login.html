@@ -7,13 +7,38 @@
         <div class="menu-row"></div>
         <div class="head-menu">
             <span class="head-menu-item"><a href="/home">home</a></span>
-            <span  class="head-menu-item"><a href="/reports">reports</a></span>
             <span  class="head-menu-item"><a href="/search">search</a></span>
             <span  class="head-menu-item"><a href="/flt">f-tolerance</a></span>
         </div>
     </div>
 </head>
-<body>
-    <h1>login</h1>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<div class="base" >
+    <div class="login-block">
+        <div class="login-content"> 
+            <form action="/logining" method="post">
+            <div>
+                <div class="login-input">
+                    <label for="login" class="login-label">Логин:</label>
+                    <div class="login-control">
+                        <input type="text" name="login" id="login" class="login-control-elem">
+                    </div>
+                </div>
+                <div class="login-input">
+                    <label for="pass" class="login-label">Пароль:</label>
+                    <div class="login-control">
+                        <input type="password" name="pass" id="pass" class="login-control-elem">
+                    </div>
+                </div>
+            </div>
+            <div class="login-button">
+                <input type="submit" value="Войти" class="button">
+            </div>
+            </form> 
+        </div>  
+    </div>
+    
+</div>
+    <h1></h1>
 </body>
 </html>
